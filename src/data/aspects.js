@@ -1,6 +1,6 @@
 export const aspects = [
     {
-        name: 'Aggression',
+        name: 'Agresividad',
         img: 'images/aspects/MC01en_55.jpg',
         packs: [
             "Core Set",
@@ -8,7 +8,7 @@ export const aspects = [
         ]
     },
     {
-        name: 'Justice',
+        name: 'Justicia',
         img: 'images/aspects/MC01en_62.jpg',
         packs: [
             "Core Set",
@@ -16,7 +16,7 @@ export const aspects = [
         ]
     },
     {
-        name: 'Leadership',
+        name: 'Liderazgo',
         img: 'images/aspects/MC01en_72.jpg',
         packs: [
             "Core Set",
@@ -24,7 +24,7 @@ export const aspects = [
         ]
     },
     {
-        name: 'Protection',
+        name: 'Proteccion',
         img: 'images/aspects/MC01en_79.jpg',
         packs: [
             "Core Set",

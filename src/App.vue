@@ -3,16 +3,17 @@
         <h1>
             <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
         </h1>
-
-        <button class="randomize-button" @click="randomize">Randomize</button>
+		<a href="#datos" id="enlace">&nbsp;</a>
+        <button class="randomize-button" @click="randomizeScroll">Generar</button>
         <PlayerSelector v-model="numberOfPlayer"/>
 
         <PackSelector :packs="data.packs" v-model="selectedPacks"/>
         <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
         <RandomizationOptions v-model="randomizationOptions"/>
-
+		<div id="datos">
         <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
         <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
+		</div>
         <Changelog/>
         <Contribute/>
     </div>
@@ -33,23 +34,23 @@
     import Contribute from "./components/Contribute";
     import DifficultySelector from "./components/DifficultySelector";
 
-    const difficulties = ["standard", "expert", "nightmare"];
+    const difficulties = ["normal", "normal ii", "experto", "experto ii", "pesadila"];
 
     const dataStorage = window.localStorage;
 
     const packs = {
-        Heroes: heroes.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
-        Scenarios: scenarios.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
-        Modules: modules.map(a => a.pack).filter((a, i, arr) => arr.indexOf(a) === i),
+        Heroes: heroes.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
+        Scenarios: scenarios.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+        Modules: modules.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
     };
 
     const randomizer = new Randomizer();
 
     let selectedPacks = null;
     try {
-        selectedPacks = JSON.parse(dataStorage.getItem("selectedPacks")) || ["Core Set"];
+        selectedPacks = JSON.parse(dataStorage.getItem("selectedPacks")) || ["Caja Básica"];
     } catch {
-        selectedPacks = ["Core Set"];
+        selectedPacks = ["Caja Básica"];
         dataStorage.removeItem("selectedPacks");
     }
 
@@ -71,7 +72,7 @@
             randomizationOptions: {
                 scenario: 1,
                 decks: 1,
-                selectedDifficulties: ["standard", "expert"],
+                selectedDifficulties: ["normal", "experto"],
             },
         }),
         watch: {
@@ -91,13 +92,13 @@
         },
         computed: {
             availableScenarios() {
-                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
+                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
             },
             availableModules() {
-                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
+                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
             },
             availableHeroes() {
-                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.pack) >= 0);
+                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0);
             },
             availableDifficulties() {
                 return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
@@ -107,7 +108,12 @@
             randomize() {
                 this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
                 this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
-            }
+            },
+			randomizeScroll() {
+				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
+                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
+				var el = document.querySelector('#enlace');el.click();
+			}
         },
         components: {
             DifficultySelector,
@@ -182,7 +188,6 @@
     .panel-insert-content {
         border: solid black 2px;
         background: #fff2bd;
-        display: inline-block;
         text-align: center;
         padding: 5px;
         margin: 10px;

@@ -1,34 +1,34 @@
 <template>
     <div class="panel">
         <div class="panel-insert">
-            Custom Options
+            Opciones Personalizadas
         </div>
         <div v-if="shown">
             <div>
                 <button :disabled="value.additionalModules <= 0" @click="additionalModulesChange((value.additionalModules || 0) - 1)">-</button>
                 {{ value.additionalModules||0 }}
                 <button @click="additionalModulesChange(parseInt(value.additionalModules || 0) + 1)">+</button>
-                Extra Modules
+                Encuentros modulares extra
             </div>
 
             <div>
                 <label>
-                    <input type="checkbox" name="scenario" id="scenario" v-model="value.scenario"> Generate Scenario
+                    <input type="checkbox" name="scenario" id="scenario" v-model="value.scenario"> Generar Escenario
                 </label>
             </div>
             <div>
                 <label>
-                    <input type="checkbox" name="scenario" id="decks" v-model="value.decks"> Generate Player Decks
+                    <input type="checkbox" name="scenario" id="decks" v-model="value.decks"> Generar mazos de jugadores
                 </label>
             </div>
 
             <div @click="shown=!shown" class="panel-insert-content">
-                Hide Options
+                Esconder Opciones
             </div>
         </div>
         <div v-else>
             <div @click="shown=!shown" class="panel-insert-content">
-                Show Options
+                Mostrar Opciones
             </div>
         </div>
 

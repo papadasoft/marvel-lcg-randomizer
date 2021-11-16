@@ -1,13 +1,12 @@
 <template>
     <div class="player-selector panel">
-        <p class="panel-insert">Select the number of players</p>
+        <p class="panel-insert">Selecciona número de jugadores</p>
         <div class="player-buttons">
-            <button :disabled="value===1" @click="$emit('input', 1)">Solo</button>
-            <button :disabled="value===2" @click="$emit('input', 2)">Duo</button>
-            <button :disabled="value===3" @click="$emit('input', 3)">3 players</button>
-            <button :disabled="value===4" @click="$emit('input', 4)">4 players</button>
+            <button :disabled="value===1" @click="$emit('input', 1)">1</button>
+            <button :disabled="value===2" @click="$emit('input', 2)">2</button>
+            <button :disabled="value===3" @click="$emit('input', 3)">3</button>
+            <button :disabled="value===4" @click="$emit('input', 4)">4</button>
         </div>
-
     </div>
 </template>
 

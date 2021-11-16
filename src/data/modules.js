@@ -1,147 +1,192 @@
 export const modules = [
     {
-        name: "Bomb Scare",
+        name: "Amenaza De Bomba",
         img: 'images/modules/MC01en_109.jpg',
-        pack: "Core Set",
+        pack: "Caja Básica",
     },
     {
-        name: "The Masters of Evil",
+        name: "Señores Del Mal",
         img: 'images/modules/MC01en_128.jpg',
-        pack: "Core Set",
+        pack: "Caja Básica",
     },
     {
-        name: "Under Attack",
+        name: "Civiles En Peligro",
         img: 'images/modules/MC01en_151.jpg',
-        pack: "Core Set",
+        pack: "Caja Básica",
     },
     {
-        name: "The Legions of Hydra",
+        name: "Legiones De Hydra",
         img: 'images/modules/MC01en_180.jpg',
-        pack: "Core Set",
+        pack: "Caja Básica",
     },
     {
-        name: "The Doomsday Chair",
+        name: "La Silla Del Juicio Final",
         img: 'images/modules/MC01en_183.jpg',
-        pack: "Core Set",
+        pack: "Caja Básica",
     },
     {
-        name: "Goblin Gimmicks",
+        name: "Trucos De Duende",
         img: "images/modules/mc02en_card_goblin-glider.jpg",
-        pack: "Green Goblin"
+        pack: "Duende Verde"
     },
     {
-        name: "A Mess of Things",
+        name: "Un Auténtico Estropicio",
         img: "images/modules/02037.jpg",
-        pack: "Green Goblin"
+        pack: "Duende Verde"
     },
     {
-        name: "Power Drain",
+        name: "Alta tensión",
         img: "images/modules/02041.jpg",
-        pack: "Green Goblin"
+        pack: "Duende Verde"
     },
     {
-        name: "Running Interference",
+        name: "Impedimentos",
         img: "images/modules/02046.jpg",
-        pack: "Green Goblin"
+        pack: "Duende Verde"
     },
     {
-        name: "Weapon Master",
+        name: "Maestro De Armas",
         img: "images/modules/MC10en_148.jpg",
-        pack: "The Rise of Red Skull",
+        pack: "El Ascenso de Craneo Rojo",
     },
     {
-        name: "Experimental Weapons",
+        name: "Armas experimentales",
         img: "images/modules/MC10en_72.jpg",
-        pack: "The Rise of Red Skull",
+        pack: "El Ascenso de Craneo Rojo",
     },
     {
-        name: "Hydra Assault",
+        name: "Asalto De Hydra",
         img: "images/modules/MC10en_145.jpg",
-        pack: "The Rise of Red Skull",
+        pack: "El Ascenso de Craneo Rojo",
     },
     {
-        name: "Hydra Patrol",
+        name: "Patrulla De Hydra",
         img: "images/modules/MC10en_152.jpg",
-        pack: "The Rise of Red Skull",
+        pack: "El Ascenso de Craneo Rojo",
     },
     {
-        name: "Anachronauts",
+        name: "Anacronautas",
         img: "images/modules/MC11en_40.jpg",
-        pack: "The Once and Future Kang",
+        pack: "Antiguo Y Futuro Kang",
     },
     {
-        name: "Master of Time",
+        name: "Amo Del Tiempo",
         img: "images/modules/MC11en_47.jpg",
-        pack: "The Once and Future Kang",
+        pack: "Antiguo Y Futuro Kang",
     },
     {
         name: "Temporal",
         img: "images/modules/MC11en_30.jpg",
-        pack: "The Once and Future Kang",
+        pack: "Antiguo Y Futuro Kang",
     },
     {
-        name: "Kree Fanatic",
+        name: "Fanático Kree",
         img: "images/modules/gen_con_2020_ronan.jpg",
-        pack: "Ronan the Accuser (Print and Play)",
+        pack: "Ronan el Acusador (Imprimir y Jugar)",
     },
     {
-        name: "Band of Badoon",
+        name: "Banda Badoon",
         img: "images/modules/MC16en_117.jpg",
-        pack: "Galaxy's Most Wanted",
+        pack: "Los más buscados de la galaxia",
     },
     {
-        name: "Galactic Artifacts",
+        name: "Artefactos Galácticos",
         img: "images/modules/MC16en_122.jpg",
-        pack: "Galaxy's Most Wanted",
+        pack: "Los más buscados de la galaxia",
     },
     {
-        name: "Kree Militants",
+        name: "Militantes Kree",
         img: "images/modules/MC16en_131.jpg",
-        pack: "Galaxy's Most Wanted",
+        pack: "Los más buscados de la galaxia",
     },
     {
         name: "Menagerie Medley",
         img: "images/modules/MC16en_135.jpg",
-        pack: "Galaxy's Most Wanted",
+        pack: "Los más buscados de la galaxia",
     },
     {
-        name: "Space Pirates",
+        name: "Piratas Espaciales",
         img: "images/modules/MC16en_138.jpg",
-        pack: "Galaxy's Most Wanted",
+        pack: "Los más buscados de la galaxia",
     },
     {
-        name: "The Black Order",
-        img: "images/modules/MC21en_85.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Order Negra",
+        img: "images/modules/MC21es_85.jpg",
+        pack: "La Sombra del Titán Loco",
     },
     {
-        name: "Armies of Titan",
-        img: "images/modules/MC21en_89.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Ejércitos De Titán",
+        img: "images/modules/MC21es_89.jpg",
+        pack: "La Sombra del Titán Loco",
     },
     {
-        name: "Children of Thanos",
-        img: "images/modules/MC21en_125.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Hijos de Thanos",
+        img: "images/modules/MC21es_125.jpg",
+        pack: "La Sombra del Titán Loco",
     },
     {
-        name: "Infinity Gauntlet",
-        img: "images/modules/MC21en_129.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Guantelete Del Infinito",
+        img: "images/modules/MC21es_129.jpg",
+        pack: "La Sombra del Titán Loco",
     },
     {
-        name: "Legions of Hel",
-        img: "images/modules/MC21en_152.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Legiones De Hel",
+        img: "images/modules/MC21es_152.jpg",
+        pack: "La Sombra del Titán Loco",
     },
     {
-        name: "Frost Giants",
-        img: "images/modules/MC21en_156.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Gigantes De Hielo",
+        img: "images/modules/MC21es_156.jpg",
+        pack: "La Sombra del Titán Loco",
     },
     {
-        name: "Enchantress",
-        img: "images/modules/MC21en_177.jpg",
-        pack: "The Mad Titan's Shadow",
+        name: "Encantadora",
+        img: "images/modules/MC21es_177.jpg",
+        pack: "La Sombra del Titán Loco",
+    },
+    {
+        name: "Malas Bestias",
+        img: "images/modules/MC24es_14.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Hermanos Grimm",
+        img: "images/modules/MC24es_18.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Banda De Fuego Cruzado",
+        img: "images/modules/MC24es_23.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Mr. Hyde",
+        img: "images/modules/MC24es_35.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Arsenal Desvalijado",
+        img: "images/modules/MC24es_37.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Sindicato Siniestro",
+        img: "images/modules/MC24es_42.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Estado De Emergencia",
+        img: "images/modules/MC24es_55.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Caos En Las Calles",
+        img: "images/modules/MC24es_60.jpg",
+        pack: "The Hood"
+    },
+    {
+        name: "Brigada De Demolición",
+        img: "images/modules/MC24es_64.jpg",
+        pack: "The Hood"
     }
 ];

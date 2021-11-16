@@ -1,14 +1,14 @@
 <template>
     <div class="hero-randomizer panel">
-        <div class="title panel-insert" @click="shown=!shown">Players' Deck</div>
+        <div class="title panel-insert" @click="shown=!shown">Mazos de jugadores</div>
 
         <div class="warning" v-if="availableDecks.length < numberOfPlayer">
-            Not enough Heroes for all the players.
+            No hay Héroes para todos los jugadores.
         </div>
 
         <div class="decks" v-if="shown">
             <div class="hero-deck" :key="index" v-for="({hero, aspects}, index) in selectedDecks">
-                <h2 class="panel-insert-content">Player {{index+1}} <span v-if="index===0">(First Player)</span></h2>
+                <h2 class="panel-insert-content">Jugador {{index+1}} <span v-if="index===0">(Jugador inicial)</span></h2>
                 <div class="cards">
                     <div class="card">
                         <img :src="hero.alterEgoImg" :alt="hero.alterEgo" />
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="name panel-insert-content">
-                    {{hero.alterEgo}} / {{hero.hero}}({{hero.pack}}) + {{aspects.map(a => a.name).join(' + ')}}
+                    {{hero.alterEgo}} / {{hero.hero}} ({{hero.pack}}) + {{aspects.map(a => a.name).join(' + ')}}
                 </div>
             </div>
         </div>

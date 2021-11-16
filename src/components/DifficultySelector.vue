@@ -1,24 +1,23 @@
 <template>
     <div class="difficulties-selector panel">
         <div class="panel-insert">
-            Selected difficulties
+            Dificultades seleccionadas
         </div>
         <div v-if="!shown" class="difficulties-selected">
             {{value.join(", ")}}
         </div>
         <div class="difficulties" v-if="shown">
-            <h3>Difficulties</h3>
+            <h3>Dificultades</h3>
             <div class="difficulty-type-column" :key="difficulty" v-for="difficulty in difficulties">
                 <label>
                     <input type="checkbox" :checked="value.indexOf(difficulty) >= 0" @input="toggleDifficulty(difficulty, $event.target.checked)">{{difficulty}}
                 </label>
             </div>
         </div>
-
         <div class="toggle">
             <div @click="shown=!shown" class="panel-insert-content">
-                <span v-if="!shown">Select difficulties</span>
-                <span v-else>Finish Selection</span>
+                <span v-if="!shown">Selecciona dificultades</span>
+                <span v-else>Terminar selección</span>
             </div>
         </div>
     </div>
@@ -29,10 +28,10 @@
         name: "DifficultySelector",
         props: {
             value: {
-                default: ["Standard", "Expert"],
+                default: ["normal", "experto"],
             },
             difficulties: {
-                default: ["Standard", "Expert"],
+                default: ["Normal", "Experto"],
             }
         },
         data: () => ({
