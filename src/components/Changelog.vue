@@ -3,6 +3,12 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>17 de noviembre de 2021</h3>
+                <ul>
+                    <li>Añadidas imágenes para todo el contenido a excepción Kang y sus módulos y los héroes Capitán América, Dr. Extraño y Hulk que se añadira en próximas actualizaciones</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
                 <h3>16 de noviembre de 2021</h3>
                 <ul>
                     <li>Añadidas imágenes para The Hood y La sombra del titán Loco en español</li>

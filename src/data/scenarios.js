@@ -1,22 +1,22 @@
 export const scenarios = [
     {
         name: 'Rino - Allanamiento',
-        img: 'images/scenarios/MC01en_97A.jpg',
+        img: 'images/scenarios/MC01es_97A.jpg',
         pack: "Caja Básica",
     },
     {
         name: 'Klaw - Distribución Clandestina',
-        img: 'images/scenarios/MC01en_116A.jpg',
+        img: 'images/scenarios/MC01es_116A.jpg',
         pack: "Caja Básica",
     },
     {
         name: 'Ultrón - La Capucha Carmesí',
-        img: 'images/scenarios/MC01en_137A.jpg',
+        img: 'images/scenarios/MC01es_137A.jpg',
         pack: "Caja Básica",
     },
     {
         name: 'Duende Verde - Negocios Arriesgados',
-        img: 'images/scenarios/02004.jpg',
+        img: 'images/scenarios/mc02es_card_hostile-takeover.jpg',
         pack: "Duende Verde",
     },
     {
@@ -26,7 +26,7 @@ export const scenarios = [
     },
     {
         name: 'Brigada de Demolición - Fuga De Prisión',
-        img: 'images/scenarios/MC03en_1A.jpg',
+        img: 'images/scenarios/MC03es_1A.jpg',
         pack: 'Brigada de Demolición',
         decks: [
             {
@@ -69,27 +69,27 @@ export const scenarios = [
     {
         name: "Calavera - Ataque Al Monte Atenea",
         pack: "El Ascenso de Craneo Rojo",
-        img: "images/scenarios/MC10en_61A.jpg",
+        img: "images/scenarios/MC10es_61A.jpg",
     },
     {
         name: "Hombre Absorbente - Por Aquí No Pasa Nadie",
         pack: "El Ascenso de Craneo Rojo",
-        img: "images/scenarios/MC10en_79A.jpg"
+        img: "images/scenarios/MC10es_79A.jpg"
     },
     {
         name: "Supervisor - A La Caza Del Héroe",
         pack: "El Ascenso de Craneo Rojo",
-        img: "images/scenarios/MC10en_96A.jpg",
+        img: "images/scenarios/MC10es_96A.jpg",
     },
     {
         name: "Zola - La Isla Del Doctor Zola",
         pack: "El Ascenso de Craneo Rojo",
-        img: "images/scenarios/MC10en_112A.jpg",
+        img: "images/scenarios/MC10es_112A.jpg",
     },
     {
         name: "Craneo Rojo - El Ascenso de Craneo Rojo",
         pack: "El Ascenso de Craneo Rojo",
-        img: "images/scenarios/MC10en_128A.jpg",
+        img: "images/scenarios/MC10es_128A.jpg",
     },
     {
         name: "Kang - La Llegada De Kang",
@@ -99,27 +99,27 @@ export const scenarios = [
     {
         name: "Drang - Hermandad De Los Badoon",
         pack: "Los más buscados de la galaxia",
-        img: "images/scenarios/MC16en_61A.jpg",
+        img: "images/scenarios/MC16es_61A.jpg",
     },
     {
         name: "Coleccionista 1 – Infiltrados En El Museo",
         pack: "Los más buscados de la galaxia",
-        img: "images/scenarios/MC16en_73A.jpg",
+        img: "images/scenarios/MC16es_73A.jpg",
     },
     {
         name: "Coleccionista 2 – Huida Del Museo",
         pack: "Los más buscados de la galaxia",
-        img: "images/scenarios/MC16en_82A.jpg",
+        img: "images/scenarios/MC16es_82A.jpg",
     },
     {
         name: "Nébula - El arte de la evasión",
         pack: "Los más buscados de la galaxia",
-        img: "images/scenarios/MC16en_91A.jpg",
+        img: "images/scenarios/MC16es_91A.jpg",
     },
     {
         name: "Ronan - Intercepción inminente",
         pack: "Los más buscados de la galaxia",
-        img: "images/scenarios/MC16en_106A.jpg",
+        img: "images/scenarios/MC16es_106A.jpg",
     },
     {
         name: "Fauces Negras - Ataque A Sapiencial",

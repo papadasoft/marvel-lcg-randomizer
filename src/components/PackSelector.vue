@@ -7,13 +7,13 @@
             {{value.join(", ")}}
         </div>
         <div class="packs" v-if="shown">
-			<div class="content-selector panel">
+			<!--<div class="content-selector panel">
 				<div class="content-buttons">
 					<button :disabled="value===Oficial" @click="openCity(event, 'oficial')">Oficial</button>
 					<button :disabled="value===Fanmade" @click="openCity(event, 'fanmade')">Fanmade</button>
 					<button :disabled="value===DC" @click="openCity(event, 'fanmadedc')">DC</button>
 				</div>
-			</div>
+			</div>-->
             <div class="pack-type-column" :key="type" v-for="(packets, type) in packs">
                 <h3 v-if="type=='Modules'">Módulos</h3>
 				<h3 v-if="type=='Heroes'">Héroes</h3>

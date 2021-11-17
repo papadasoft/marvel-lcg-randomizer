@@ -1,52 +1,52 @@
 export const modules = [
     {
         name: "Amenaza De Bomba",
-        img: 'images/modules/MC01en_109.jpg',
+        img: 'images/modules/MC01es_109.jpg',
         pack: "Caja Básica",
     },
     {
         name: "Señores Del Mal",
-        img: 'images/modules/MC01en_128.jpg',
+        img: 'images/modules/MC01es_128.jpg',
         pack: "Caja Básica",
     },
     {
         name: "Civiles En Peligro",
-        img: 'images/modules/MC01en_151.jpg',
+        img: 'images/modules/MC01es_151.jpg',
         pack: "Caja Básica",
     },
     {
         name: "Legiones De Hydra",
-        img: 'images/modules/MC01en_180.jpg',
+        img: 'images/modules/MC01es_180.jpg',
         pack: "Caja Básica",
     },
     {
         name: "La Silla Del Juicio Final",
-        img: 'images/modules/MC01en_183.jpg',
+        img: 'images/modules/MC01es_183.jpg',
         pack: "Caja Básica",
     },
     {
         name: "Trucos De Duende",
-        img: "images/modules/mc02en_card_goblin-glider.jpg",
+        img: "images/modules/mc02es_card_goblin-glider.jpg",
         pack: "Duende Verde"
     },
     {
         name: "Un Auténtico Estropicio",
-        img: "images/modules/02037.jpg",
+        img: "images/modules/02037_es.jpg",
         pack: "Duende Verde"
     },
     {
         name: "Alta tensión",
-        img: "images/modules/02041.jpg",
+        img: "images/modules/02041_es.jpg",
         pack: "Duende Verde"
     },
     {
         name: "Impedimentos",
-        img: "images/modules/02046.jpg",
+        img: "images/modules/02046_es.jpg",
         pack: "Duende Verde"
     },
     {
         name: "Maestro De Armas",
-        img: "images/modules/MC10en_148.jpg",
+        img: "images/modules/MC10es_148.jpg",
         pack: "El Ascenso de Craneo Rojo",
     },
     {
@@ -56,12 +56,12 @@ export const modules = [
     },
     {
         name: "Asalto De Hydra",
-        img: "images/modules/MC10en_145.jpg",
+        img: "images/modules/MC10es_145.jpg",
         pack: "El Ascenso de Craneo Rojo",
     },
     {
         name: "Patrulla De Hydra",
-        img: "images/modules/MC10en_152.jpg",
+        img: "images/modules/MC10es_152.jpg",
         pack: "El Ascenso de Craneo Rojo",
     },
     {
@@ -86,31 +86,31 @@ export const modules = [
     },
     {
         name: "Banda Badoon",
-        img: "images/modules/MC16en_117.jpg",
+        img: "images/modules/MC16es_117.jpg",
         pack: "Los más buscados de la galaxia",
     },
     {
         name: "Artefactos Galácticos",
-        img: "images/modules/MC16en_122.jpg",
+        img: "images/modules/MC16es_122.jpg",
         pack: "Los más buscados de la galaxia",
     },
     {
         name: "Militantes Kree",
-        img: "images/modules/MC16en_131.jpg",
+        img: "images/modules/MC16es_131.jpg",
         pack: "Los más buscados de la galaxia",
     },
     {
-        name: "Menagerie Medley",
-        img: "images/modules/MC16en_135.jpg",
+        name: "Bestiario Galáctico",
+        img: "images/modules/MC16es_135.jpg",
         pack: "Los más buscados de la galaxia",
     },
     {
         name: "Piratas Espaciales",
-        img: "images/modules/MC16en_138.jpg",
+        img: "images/modules/MC16es_138.jpg",
         pack: "Los más buscados de la galaxia",
     },
     {
-        name: "Order Negra",
+        name: "Orden Negra",
         img: "images/modules/MC21es_85.jpg",
         pack: "La Sombra del Titán Loco",
     },
