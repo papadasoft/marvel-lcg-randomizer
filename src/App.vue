@@ -34,7 +34,7 @@
     import Contribute from "./components/Contribute";
     import DifficultySelector from "./components/DifficultySelector";
 
-    const difficulties = ["normal", "normal ii", "experto", "experto ii", "pesadila"];
+    const difficulties = ["escaramuza", "normal", "normal ii", "experto", "experto ii", "heróico 1", "heróico 2", "heróico 3"];
 
     const dataStorage = window.localStorage;
 

@@ -47,6 +47,7 @@ export const scenarios = [
             },
         ],
         difficulties: [
+			["Escaramuza", "Escaramuza (Todos los Villanos A)"],
             ["Normal", "Normal (Todos los Villanos A)"],
             ["Experto", "Bulldozer A, Martinete A, Bola De Trueno A, Destructor B"],
             ["Experto", "Bulldozer A, Martinete A, Bola De Trueno B, Destructor A"],
@@ -63,7 +64,9 @@ export const scenarios = [
             ["Experto", "Bulldozer B, Martinete B, Bola De Trueno A, Destructor B"],
             ["Experto", "Bulldozer B, Martinete B, Bola De Trueno B, Destructor A"],
             ["Experto", "Experto (Todos los Villanos B)"],
-            ["Pesadilla", "Pesadilla (Todos los Villanos A+B)"],
+            ["Heróico 1", "Heróico 1 (Todos los Villanos A+B)"],
+			["Heróico 2", "Heróico 2 (Todos los Villanos A+B)"],
+			["Heróico 3", "Heróico 3 (Todos los Villanos A+B)"],
         ],
     },
     {
