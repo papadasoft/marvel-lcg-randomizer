@@ -64,9 +64,9 @@ export const scenarios = [
             ["Experto", "Bulldozer B, Martinete B, Bola De Trueno A, Destructor B"],
             ["Experto", "Bulldozer B, Martinete B, Bola De Trueno B, Destructor A"],
             ["Experto", "Experto (Todos los Villanos B)"],
-            ["Heróico 1", "Heróico 1 (Todos los Villanos A+B)"],
-			["Heróico 2", "Heróico 2 (Todos los Villanos A+B)"],
-			["Heróico 3", "Heróico 3 (Todos los Villanos A+B)"],
+            ["Heroico 1", "Heroico 1 (Todos los Villanos A+B)"],
+			["Heroico 2", "Heroico 2 (Todos los Villanos A+B)"],
+			["Heroico 3", "Heroico 3 (Todos los Villanos A+B)"],
         ],
     },
     {
