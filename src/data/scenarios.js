@@ -71,27 +71,27 @@ export const scenarios = [
     },
     {
         name: "Calavera - Ataque Al Monte Atenea",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_61A.jpg",
     },
     {
         name: "Hombre Absorbente - Por Aquí No Pasa Nadie",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_79A.jpg"
     },
     {
         name: "Supervisor - A La Caza Del Héroe",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_96A.jpg",
     },
     {
         name: "Zola - La Isla Del Doctor Zola",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_112A.jpg",
     },
     {
-        name: "Craneo Rojo - El Ascenso de Craneo Rojo",
-        pack: "El Ascenso de Craneo Rojo",
+        name: "Craneo Rojo - La Tiranía de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_128A.jpg",
     },
     {

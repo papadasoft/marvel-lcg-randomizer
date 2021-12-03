@@ -4,14 +4,16 @@
             <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
         </h1>
 		<a href="#datos" id="enlace">&nbsp;</a>
-        <button class="randomize-button" @click="randomizeScroll">Generar</button>
+        <button class="randomize-button" @click="randomizeScroll">Generar Partida</button>
         <PlayerSelector v-model="numberOfPlayer"/>
 
         <PackSelector :packs="data.packs" v-model="selectedPacks"/>
         <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
         <RandomizationOptions v-model="randomizationOptions"/>
 		<div id="datos">
+		<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button>
         <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
+		<button class="randomize-button" @click="randomizeHeroes">Generar Héroes</button>
         <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
 		</div>
         <Changelog/>
@@ -23,6 +25,9 @@
     import {scenarios} from './data/scenarios';
     import {modules} from './data/modules';
     import {heroes} from './data/heroes';
+	import {heroescustom} from './data/heroesCustom';
+	import {scenarioscustom} from './data/scenariosCustom';
+	import {modulescustom} from './data/modulesCustom';
     import {aspects} from "@/data/aspects";
     import PlayerSelector from "@/components/PlayerSelector";
     import RandomizationOptions from "@/components/RandomizationOptions";
@@ -39,10 +44,24 @@
     const dataStorage = window.localStorage;
 
     const packs = {
-        Heroes: heroes.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
-        Scenarios: scenarios.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
-        Modules: modules.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+		oficial: {
+			Heroes: heroes.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
+			Scenarios: scenarios.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+			Modules: modules.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
+		},
+		fanmade: {
+			HeroesCustom: heroescustom.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
+			ScenariosCustom: scenarioscustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+			ModulesCustom: modulescustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
+		}
     };
+	
+	const packscustom = {
+		HeroesCustom: heroescustom.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
+        ScenariosCustom: scenarioscustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+		ModulesCustom: modulescustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
+    };
+
 
     const randomizer = new Randomizer();
 
@@ -59,8 +78,12 @@
         data: () => ({
             data: {
                 scenarios,
+				scenarioscustom,
+				packscustom,
                 modules,
+				modulescustom,
                 heroes,
+				heroescustom,
                 aspects,
                 packs,
                 difficulties,
@@ -91,14 +114,17 @@
             this.randomize();
         },
         computed: {
+			availableScenariosCustom() {
+                return this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+            },
             availableScenarios() {
-                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
             },
             availableModules() {
-                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
             },
             availableHeroes() {
-                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0);
+                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
             },
             availableDifficulties() {
                 return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
@@ -113,6 +139,12 @@
 				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
                 this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
 				var el = document.querySelector('#enlace');el.click();
+			},
+			randomizeHeroes() {
+				this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
+			},
+			randomizeScenario() {
+				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
 			}
         },
         components: {
@@ -223,5 +255,53 @@
         font-weight: bold;
 
     }
+	
+	/* Style the tab */
+	.tab {
+		overflow: hidden;
+		border: 1px solid #000;
+		background-color: #f1f1f1;
+	}
+
+	/* Style the buttons that are used to open the tab content */
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		margin: 0px;
+		font-weight: bold;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+		background-color: #ddd;
+	}
+
+	/* Create an active/current tablink class */
+	.tab button.active {
+		background-color: red;
+		color: white;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+		display: none;
+		width:100%;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+	
+	.pack-type-column {
+		width:33%;
+		min-width:100px;
+		vertical-align:top;
+		align-content: middle;
+		display: inline-block !important;
+	}
 
 </style>

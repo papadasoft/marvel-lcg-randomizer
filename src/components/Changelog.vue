@@ -3,11 +3,23 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>03 de diciembre de 2021</h3>
+                <ul>
+                    <li>Añadidos apartado Fanmade en los pack con todos los packs de creación nacional que se completara con los internacionales en los próximos días.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>29 de noviembre de 2021</h3>
+                <ul>
+                    <li>Añadidos botones para generar escenario o héroes por separado sin tener que hacer un scroll hasta la zona superior.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
                 <h3>17 de noviembre de 2021</h3>
                 <ul>
                     <li>Añadidas imágenes para todo el contenido a excepción Kang y sus módulos y los héroes Capitán América, Dr. Extraño y Hulk que se añadira en próximas actualizaciones</li>
                 </ul>
-            </div>
+            </div>			
 			<div class="changelog-entry">
                 <h3>16 de noviembre de 2021</h3>
                 <ul>

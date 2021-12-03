@@ -47,22 +47,22 @@ export const modules = [
     {
         name: "Maestro De Armas",
         img: "images/modules/MC10es_148.jpg",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
     },
     {
         name: "Armas experimentales",
         img: "images/modules/MC10en_72.jpg",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
     },
     {
         name: "Asalto De Hydra",
         img: "images/modules/MC10es_145.jpg",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
     },
     {
         name: "Patrulla De Hydra",
         img: "images/modules/MC10es_152.jpg",
-        pack: "El Ascenso de Craneo Rojo",
+        pack: "La Tiranía de Craneo Rojo",
     },
     {
         name: "Anacronautas",

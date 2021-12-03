@@ -7,21 +7,35 @@
             {{value.join(", ")}}
         </div>
         <div class="packs" v-if="shown">
-			<!--<div class="content-selector panel">
-				<div class="content-buttons">
-					<button :disabled="value===Oficial" @click="openCity(event, 'oficial')">Oficial</button>
-					<button :disabled="value===Fanmade" @click="openCity(event, 'fanmade')">Fanmade</button>
-					<button :disabled="value===DC" @click="openCity(event, 'fanmadedc')">DC</button>
+			<div class="content-selector panel">
+				<div class="content-buttons tab">
+					<button @click="openPacks('oficial', $event)" class="tablinks active">Oficial</button>
+					<button @click="openPacks('fanmade', $event)" class="tablinks">Fanmade</button>
+					<!--<button @click="openPacks('fanmadedc')">DC</button>-->
 				</div>
-			</div>-->
-            <div class="pack-type-column" :key="type" v-for="(packets, type) in packs">
-                <h3 v-if="type=='Modules'">Módulos</h3>
-				<h3 v-if="type=='Heroes'">Héroes</h3>
-				<h3 v-if="type=='Scenarios'">Escenarios</h3>
-                <label :key="pack" v-for="pack in packets">
-                    <input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
-                </label>
-            </div>
+			</div>
+			<div id="oficial" class="tabcontent" style="display:block;">
+				<div class="pack-type-column" :key="type" v-for="(packets, type) in packs.oficial">
+					<h3 v-if="type=='Modules'">Módulos</h3>
+					<h3 v-if="type=='Heroes'">Héroes</h3>
+					<h3 v-if="type=='Scenarios'">Escenarios</h3>
+					<label :key="pack" v-for="pack in packets">
+						<input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
+					</label>
+				</div>
+			</div>
+			<div id="fanmade" class="tabcontent">
+				<center><a href="https://discord.gg/Px98pW9TtU" target="_new">Haz click aquí para saber más del contenido fanmade.</a></center>
+				<div class="pack-type-column" :key="type" v-for="(packets, type) in packs.fanmade">
+					<h3 v-if="type=='ModulesCustom'">Módulos</h3>
+					<h3 v-if="type=='HeroesCustom'">Héroes</h3>
+					<h3 v-if="type=='ScenariosCustom'">Escenarios</h3>
+					<label :key="pack" v-for="pack in packets">
+						<input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
+						<!--<a :href="packets.url"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsocial-messaging-ui-color-shapes%2F128%2Fsearch-circle-blue-512.png&f=1&nofb=1" style="width:14px;"/></a>-->
+					</label>
+				</div>
+			</div>
         </div>
 
         <div class="toggle">
@@ -47,7 +61,7 @@
         data: () => ({
             shown: false,
         }),
-        methods: {
+		methods: {
             togglePack(pack, checked){
                 const packs = this.value.slice(0);
                 if(checked){
@@ -58,9 +72,9 @@
 
                 this.$emit("input", packs);
             },
-			openCity(evt, cityName) {
+			openPacks(content, evt) {
 				// Declare all variables
-				var i, tabcontent, tablinks;
+				var i, tabcontent, tablinks, element;
 				
 				// Get all elements with class="tabcontent" and hide them
 				tabcontent = document.getElementsByClassName("tabcontent");
@@ -75,8 +89,12 @@
 				}
 				
 				// Show the current tab, and add an "active" class to the button that opened the tab
-				document.getElementById(cityName).style.display = "block";
-				evt.currentTarget.className += " active";
+				element = document.getElementById(content);
+				if(element!=null) {
+					document.getElementById(content).style.display = "block";
+				}
+				if(evt!=null)
+					evt.currentTarget.className ? evt.currentTarget.className += " active" : true;
 			}
         }
     }
