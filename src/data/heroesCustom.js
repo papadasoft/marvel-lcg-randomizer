@@ -362,6 +362,14 @@ export const heroescustom = [
 		url: 'https://drive.google.com/drive/folders/1OSgk-SRfShUj0SNnpLh1ftrNJDLalGct'
     },
 	{
+        hero: 'Seda by Justatuna',
+        heroImg: 'images/heroesCustom/SedaByJustatuna.jpg',
+        alterEgo: "Seda",
+        alterEgoImg: 'images/heroesCustom/CindyMoonByJustatuna.jpg',
+        pack: 'Seda by Justatuna',
+		url: 'https://drive.google.com/drive/folders/1BFGJfXa9kow9WSp8ybZduCeVGLxHEkU3'
+    },
+	{
         hero: 'S.H.I.E.L.D. by Juncal',
         heroImg: 'images/heroesCustom/SHIELDByJuncal.jpg',
         alterEgo: "Servicio Gubernamental",

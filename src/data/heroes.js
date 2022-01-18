@@ -182,5 +182,27 @@ export const heroes = [
         alterEgo: 'Nebula',
         alterEgoImg: 'images/heroes/mc22es_nebula-alter-ego.jpg',
         pack: 'Nébula',
+    },
+    {
+        hero: 'Maquina de Guerra',
+        heroImg: 'images/heroes/mc23es_maquinadeguerra-hero.jpg',
+        alterEgo: 'James Rhodes',
+        alterEgoImg: 'images/heroes/mc23es_james-rodes-alter-ego.jpg',
+        pack: 'Maquina de Guerra',
+    },
+    {
+        hero: 'Valquiria',
+        heroImg: 'images/heroes/mc25es_valquiria-hero.jpg',
+        alterEgo: 'Brunilda',
+        alterEgoImg: 'images/heroes/mc25es_brunilda-alter-ego.jpg',
+        pack: 'Valquiria',
+    },
+    {
+        hero: 'La Visión',
+        heroImg: 'images/heroes/mc26es_lavision-hero.jpg',
+        alterEgo: 'Brunilda',
+        alterEgoImg: 'images/heroes/mc26es_lavision-alter.jpg',
+        pack: 'La Visón',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/vision'
     }
 ];

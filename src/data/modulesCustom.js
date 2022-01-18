@@ -1,8 +1,26 @@
 export const modulescustom = [
     {
+        name: "A los cielos",
+        img: 'images/modulesCustom/Aloscielos.jpg',
+        pack: "A los cielos",
+		url: 'https://drive.google.com/drive/folders/19Na3qpNxYNJnFrzsZSXLdNu-BJTZP5aq?usp=sharing'
+    },
+    {
         name: "Daredevil Bestia",
         img: 'images/modulesCustom/DaredevilBestia.jpg',
         pack: "Daredevil Bestia",
+    },
+    {
+        name: "Criatura de sangre fría",
+        img: 'images/modulesCustom/Criaturadesangrefria.jpg',
+        pack: "Criatura de sangre fría",
+		url: 'https://drive.google.com/drive/folders/158QObNCvP7Sv8luxqpDDmyEAdtrU-HyZ?usp=sharing'
+    },
+    {
+        name: "Daily Bugle",
+        img: 'images/modulesCustom/Dailybugle.jpg',
+        pack: "Daily Bugle",
+		url: 'https://drive.google.com/drive/folders/1GDtAtx8sJUr7OG0vcXTEU0D74t4aaqf6?usp=sharing'
     },
     {
         name: "Dios Simbionte",
@@ -15,10 +33,22 @@ export const modulescustom = [
         pack: "El devorador",
     },
     {
+        name: "Enemigo oculto",
+        img: 'images/modulesCustom/Enemigooculto.jpg',
+        pack: "Enemigo oculto",
+		url: 'https://drive.google.com/drive/folders/15y99U98KRgNYJufsEjtmtWbDwFMl9evV?usp=sharing'
+    },
+    {
         name: "Enemigos intimos",
         img: 'images/modulesCustom/EnemigosIntimos.jpg',
         pack: "Enemigos intimos",
 		url: 'https://drive.google.com/drive/folders/1Ch9t8xDfMMjqS7ILKyVz-rv5DmMqBh_C?usp=sharing'
+    },
+    {
+        name: "Escuadrón Siniestro",
+        img: 'images/modulesCustom/EscuadronSiniestro.jpg',
+        pack: "Escuadrón Siniestro",
+		url: 'https://drive.google.com/drive/folders/1hcYImra7zTFUSWqmKJRektKKGNmcg-a6?usp=sharing'
     },
     {
         name: "Imperio Spartoi",
@@ -27,10 +57,28 @@ export const modulescustom = [
 		url: 'https://drive.google.com/drive/folders/1j5OH9EmgY7G3rcxvPcuAfrv4y4QTHeRO'
     },
     {
+        name: "La cura",
+        img: 'images/modulesCustom/Lacura.jpg',
+        pack: "La cura",
+		url: 'https://drive.google.com/drive/folders/180eSoUOAY9e6e4UNIkU9UKggZRAaCONA?usp=sharing'
+    },
+    {
+        name: "La Mancha",
+        img: 'images/modulesCustom/LaMancha.jpg',
+        pack: "La Mancha",
+		url: 'https://drive.google.com/drive/folders/1hvB2GJB0rUUiydnHip3VksQlU4mi-WVh?usp=sharing'
+    },
+    {
         name: "Los Fantastix",
         img: 'images/modulesCustom/LosFantastix.jpg',
         pack: "Los Fantastix",
 		url: 'https://drive.google.com/drive/folders/1Gf2WndPkKA4RcuDHOLO0Ux_HECe29LIJ'
+    },
+    {
+        name: "Matanza Máxima",
+        img: 'images/modulesCustom/Matanzamaxima.jpg',
+        pack: "Matanza Máxima",
+		url: 'https://drive.google.com/drive/folders/1Z8-WIp5pA74Ec6EknskScoG2VVAInwvD?usp=sharing'
     },
     {
         name: "Shuma-Gorath",

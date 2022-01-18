@@ -3,6 +3,27 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>18 de enero de 2022</h3>
+                <ul>
+					<li>Añadido el pack de héroe oficial: La Visión.</li>
+					<li>Añadido el pack de escenario fanmade: Immortus.</li>
+                    <li>Añadidos los siguientes encuentros modulares fanmade: A los cielos, Criatura de sangre fría, Daily Bugle, La cura y Matanza máxima.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>02 de enero de 2022</h3>
+                <ul>
+                    <li>Añadidos los siguientes encuentros modulares fanmade: Enemigo oculto (Camaleón), La Mancha y Escuadrón Siniestro.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>18 de diciembre de 2021</h3>
+                <ul>
+                    <li>Añadidos héroes oficiales: Valkiria y Maquina de guerra.</li>
+					<li>Añadido héroe fanmade: Seda (Silk) by Justatuna.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
                 <h3>03 de diciembre de 2021</h3>
                 <ul>
                     <li>Añadidos apartado Fanmade en los pack con todos los packs de creación nacional que se completara con los internacionales en los próximos días.</li>

@@ -24,6 +24,12 @@ export const scenarioscustom = [
 		url: 'https://drive.google.com/drive/folders/1Mns6IaauFXx3XFvICWa2C2GtZ99lI0aE?usp=sharing'
     },
 	{
+        name: 'Immortus - Erradicar líneas temporales ramificadas',
+        img: 'images/scenariosCustom/Immortus.jpg',
+        pack: "Immortus",
+		url: 'https://drive.google.com/drive/folders/1FmY7NEIgwN7ERprtEfi3VLc-Q-jNy7Rs?usp=sharing'
+    },
+	{
         name: 'Killmonger - Puja por el trono',
         img: 'images/scenariosCustom/Killmonger.jpg',
         pack: "Killmonger",

@@ -11,7 +11,7 @@
         <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
         <RandomizationOptions v-model="randomizationOptions"/>
 		<div id="datos">
-		<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button>
+		<button class="randomize-button" @click="randomizeScroll">Generar Partida</button>&nbsp;&nbsp;<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button>
         <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
 		<button class="randomize-button" @click="randomizeHeroes">Generar Héroes</button>
         <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
