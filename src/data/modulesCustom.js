@@ -9,6 +9,7 @@ export const modulescustom = [
         name: "Daredevil Bestia",
         img: 'images/modulesCustom/DaredevilBestia.jpg',
         pack: "Daredevil Bestia",
+		url: "https://drive.google.com/drive/folders/1xJb8ZnXUo-3kJZL0aP1Sa4sH_w1h3iMz"
     },
     {
         name: "Criatura de sangre fría",
@@ -26,11 +27,19 @@ export const modulescustom = [
         name: "Dios Simbionte",
         img: 'images/modulesCustom/DiosSimbionte.jpg',
         pack: "Dios Simbionte",
+		url: "https://drive.google.com/drive/folders/1zP13B5UVul3xVCtggX4OwER5YHWEwqwP"
     },
     {
         name: "El devorador",
         img: 'images/modulesCustom/ElDevorador.jpg',
         pack: "El devorador",
+		url: "https://drive.google.com/drive/folders/1AJfINMVAdgVxWvjjsHYWjDdOvB4S6zmy"
+    },
+	{
+        name: "En guerra",
+        img: 'images/modulesCustom/Enguerra.jpg',
+        pack: "En guerra by Jammydude",
+		url: "https://drive.google.com/drive/folders/14-SyMp2jHHMz7A4caFvXbDBSNLm3KeKN?usp=sharing"
     },
     {
         name: "Enemigo oculto",

@@ -12,7 +12,7 @@
                 <div class="main-scenario">
                     <img :src="scenario.scenario.img" :alt="scenario.scenario.name">
                     <div class="panel-insert-content">
-                        {{scenario.scenario.name}} ({{scenario.scenario.pack}})
+                        {{scenario.scenario.name}} ({{scenario.scenario.pack}}) <a :href="scenario.scenario.url" alt="ver contenido" title="ver contenido" target="_new" v-if="scenario.scenario.url"><img src="images/download.png" class="scenary-download-icon"></a>
                     </div>
                 </div>
                 <div v-bind:key="index" v-for="({deck, modules}, index) in scenario.modules">
@@ -22,7 +22,7 @@
                             <div class="module" :key="index2" v-for="(mod, index2) in modules">
                                 <img :src="mod.img" :alt="mod.name"/>
                                 <div class="panel-insert-content">
-                                    {{mod.name}} ({{mod.pack}})
+                                    {{mod.name}} ({{mod.pack}}) <a :href="mod.url" alt="ver contenido" title="ver contenido" target="_new" v-if="mod.url"><img src="images/download.png" class="module-download-icon"></a>
                                 </div>
                             </div>
                         </div>
@@ -77,4 +77,9 @@
     .content{
         text-align: center;
     }
+	
+	.scenary-download-icon, .module-download-icon {
+		width:36px;
+		vertical-align:text-top;
+	}
 </style>

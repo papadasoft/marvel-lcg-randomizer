@@ -11,7 +11,7 @@
 				<div class="content-buttons tab">
 					<button @click="openPacks('oficial', $event)" class="tablinks active">Oficial</button>
 					<button @click="openPacks('fanmade', $event)" class="tablinks">Fanmade</button>
-					<!--<button @click="openPacks('fanmadedc')">DC</button>-->
+					<button @click="openPacks('fanmadedc', $event)" class="tablinks dc">DC Fanmade</button>
 				</div>
 			</div>
 			<div id="oficial" class="tabcontent" style="display:block;">
@@ -30,6 +30,18 @@
 					<h3 v-if="type=='ModulesCustom'">Módulos</h3>
 					<h3 v-if="type=='HeroesCustom'">Héroes</h3>
 					<h3 v-if="type=='ScenariosCustom'">Escenarios</h3>
+					<label :key="pack" v-for="pack in packets">
+						<input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
+						<!--<a :href="packets.url"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsocial-messaging-ui-color-shapes%2F128%2Fsearch-circle-blue-512.png&f=1&nofb=1" style="width:14px;"/></a>-->
+					</label>
+				</div>
+			</div>
+			<div id="fanmadedc" class="tabcontent">
+				<center><a href="https://discord.gg/Px98pW9TtU" target="_new">Haz click aquí para saber más del contenido fanmade.</a></center>
+				<div class="pack-type-column" :key="type" v-for="(packets, type) in packs.fanmadedc">
+					<h3 v-if="type=='ModulesCustomDC'">Módulos</h3>
+					<h3 v-if="type=='HeroesCustomDC'">Héroes</h3>
+					<h3 v-if="type=='ScenariosCustomDC'">Escenarios</h3>
 					<label :key="pack" v-for="pack in packets">
 						<input type="checkbox" :checked="value.indexOf(pack) >= 0" @input="togglePack(pack, $event.target.checked)">{{pack}}
 						<!--<a :href="packets.url"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsocial-messaging-ui-color-shapes%2F128%2Fsearch-circle-blue-512.png&f=1&nofb=1" style="width:14px;"/></a>-->
@@ -130,5 +142,5 @@
 	.content-selector {
 		width:100%;
 		border:none;
-	}	
+	}
 </style>

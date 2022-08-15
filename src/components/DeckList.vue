@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="name panel-insert-content">
-                    {{hero.alterEgo}} / {{hero.hero}} ({{hero.pack}}) + {{aspects.map(a => a.name).join(' + ')}}
+                    {{hero.alterEgo}} / {{hero.hero}} ({{hero.pack}}) + {{aspects.map(a => a.name).join(' + ')}} <a :href="hero.url" alt="ver contenido" title="ver contenido" target="_new" v-if="hero.url"><img src="images/download.png" class="hero-download-icon"></a>
                 </div>
             </div>
         </div>
@@ -82,4 +82,9 @@
     .hero-deck{
         margin-top: 20px;
     }
+	
+	.hero-download-icon {
+		width:19px;
+		vertical-align:text-top;
+	}
 </style>

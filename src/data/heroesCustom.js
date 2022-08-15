@@ -234,6 +234,14 @@ export const heroescustom = [
 		url: 'https://drive.google.com/drive/folders/1ihYyT2TIplhlcQjMu2VOuWvoNvGsVGIU'
     },
 	{
+        hero: 'Loba Venenosa by Matty',
+        heroImg: 'images/heroesCustom/LobavenenosaByMatty.jpg',
+        alterEgo: 'Rahne Sinclair',
+        alterEgoImg: 'images/heroesCustom/LobavenenosaByMattyAE.jpg',
+        pack: 'Loba Venenosa by Matty',
+		url: 'https://drive.google.com/drive/folders/1gs9xUeqf3YlCF8sAMOkuISCBRaq8Rfcz?usp=sharing'
+    },
+	{
         hero: 'Lobezno by Juri Krasko',
         heroImg: 'images/heroesCustom/LobeznoByJuriKrasko.jpg',
         alterEgo: 'Logan',
@@ -314,6 +322,14 @@ export const heroescustom = [
 		url: 'https://drive.google.com/drive/folders/1WIdxD0DIrYrJRPZuD785uEmft9QudhMu'
     },
 	{
+        hero: 'Penitencia by Designhacker',
+        heroImg: 'images/heroesCustom/PenitenciaByDesignhacker.jpg',
+        alterEgo: "Anna Marie",
+        alterEgoImg: 'images/heroesCustom/RobbieBaldwinByDesignhacker.jpg',
+        pack: 'Penitencia by Designhacker',
+		url: 'https://drive.google.com/drive/folders/1a_GZp1zHGV55F0E1v2eRzHNfh2RkjXxE?usp=sharing'
+    },
+	{
         hero: 'Pícara By Doko',
         heroImg: 'images/heroesCustom/PicaraByDoko.jpg',
         alterEgo: "Anna Marie",
@@ -368,6 +384,14 @@ export const heroescustom = [
         alterEgoImg: 'images/heroesCustom/CindyMoonByJustatuna.jpg',
         pack: 'Seda by Justatuna',
 		url: 'https://drive.google.com/drive/folders/1BFGJfXa9kow9WSp8ybZduCeVGLxHEkU3'
+    },
+	{
+        hero: 'Shang-Chi by DesignHacker',
+        heroImg: 'images/heroesCustom/ShanChiByDesignHacker.jpg',
+        alterEgo: "Shang-Chi",
+        alterEgoImg: 'images/heroesCustom/ShanChiAEByDesignHacker.jpg',
+        pack: 'Shang-Chi by DesignHacker',
+		url: 'https://drive.google.com/drive/folders/16RZoCNtldkZdstLJO9-wSr6jzocXwbRk?usp=sharing'
     },
 	{
         hero: 'S.H.I.E.L.D. by Juncal',

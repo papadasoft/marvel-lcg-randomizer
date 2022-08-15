@@ -5,6 +5,7 @@ export const heroes = [
         alterEgo: 'Peter Parker',
         alterEgoImg: 'images/heroes/mc01en_card_peter-parker.jpg',
         pack: 'Caja Básica',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         hero: 'Capitana Marvel',
@@ -12,6 +13,7 @@ export const heroes = [
         alterEgo: 'Carol Danvers',
         alterEgoImg: 'images/heroes/mc01en_card_carol-danvers.jpg',
         pack: 'Caja Básica',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         hero: 'She-Hulk',
@@ -19,6 +21,7 @@ export const heroes = [
         alterEgo: 'Jennifer Walters',
         alterEgoImg: 'images/heroes/mc01en_card_jennifer-walters.jpg',
         pack: 'Caja Básica',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         hero: 'Iron Man',
@@ -26,6 +29,7 @@ export const heroes = [
         alterEgo: 'Tony Stark',
         alterEgoImg: 'images/heroes/mc01en_card_tony-stark.jpg',
         pack: 'Caja Básica',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         hero: 'Pantera Negra',
@@ -33,6 +37,7 @@ export const heroes = [
         alterEgo: 'T\'Challa',
         alterEgoImg: 'images/heroes/mc01en_card_tchalla.jpg',
         pack: 'Caja Básica',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         hero: 'Capitan América',
@@ -40,6 +45,7 @@ export const heroes = [
         alterEgo: 'Steeve Rogers',
         alterEgoImg: 'images/heroes/mc04en_card_steve-rogers.png',
         pack: 'Capitan América',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/capitan_america"
     },
     {
         hero: 'Ms. Marvel',
@@ -47,6 +53,7 @@ export const heroes = [
         alterEgo: 'Kamala Khan',
         alterEgoImg: 'images/heroes/mc05en_kamala-khan.jpg',
         pack: 'Ms. Marvel',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/ms_marvel"
     },
     {
         hero: 'Thor',
@@ -54,6 +61,7 @@ export const heroes = [
         alterEgo: 'Odinson',
         alterEgoImg: 'images/heroes/mc06en_a1_odinson.jpg',
         pack: 'Thor',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/thor"
     },
     {
         hero: 'Viuda Negra',
@@ -61,6 +69,7 @@ export const heroes = [
         alterEgo: 'Natasha Romanoff',
         alterEgoImg: 'images/heroes/mc07en_natasha-romanoff.jpg',
         pack: 'Viuda Negra',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/viuda_negra"
     },
     {
         hero: 'Doctor Extraño',
@@ -68,6 +77,7 @@ export const heroes = [
         alterEgo: 'Stephen Strange',
         alterEgoImg: 'images/heroes/mc08en_stephen-strange.png',
         pack: 'Doctor Extraño',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/doctor_extrano"
     },
     {
         hero: 'Hulk',
@@ -75,6 +85,7 @@ export const heroes = [
         alterEgo: 'Bruce Banner',
         alterEgoImg: 'images/heroes/mc09en_bruce-banner.png',
         pack: 'Hulk',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/hulk"
     },
     {
         hero: 'Ojo de Halcón',
@@ -82,6 +93,7 @@ export const heroes = [
         alterEgo: 'Clint Barton',
         alterEgoImg: 'images/heroes/mc10en_clint-barton.jpg',
         pack: 'La Tiranía de Craneo Rojo',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         hero: 'Spiderwoman',
@@ -90,6 +102,7 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc10en_jessica-drew.jpg',
         pack: 'La Tiranía de Craneo Rojo',
         numberOfAspects: 2,
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         hero: 'Hombre Hormiga',
@@ -97,6 +110,7 @@ export const heroes = [
         alterEgo: 'Scott Lang',
         alterEgoImg: 'images/heroes/mc11en_scott-lang.jpg',
         pack: 'Hombre Hormiga',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/ant-man"
     },
     {
         hero: 'Avispa',
@@ -104,6 +118,7 @@ export const heroes = [
         alterEgo: 'Nadia Van Dyne',
         alterEgoImg: 'images/heroes/mc13en_nadia-van-dyne.jpg',
         pack: 'Avispa',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/wasp"
     },
     {
         hero: 'Mercurio',
@@ -111,6 +126,7 @@ export const heroes = [
         alterEgo: 'Pietro Maximoff',
         alterEgoImg: 'images/heroes/mc14en_pietro-maximoff-alter-ego.jpg',
         pack: 'Mercurio',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/quicksilver"
     },
     {
         hero: 'Bruja Escarlata',
@@ -118,6 +134,7 @@ export const heroes = [
         alterEgo: 'Wanda Maximoff',
         alterEgoImg: 'images/heroes/mc15en_wanda-maximoff.jpg',
         pack: 'Bruja Escarlata',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/scarlet_witch"
     },
     {
         hero: 'Groot',
@@ -125,6 +142,7 @@ export const heroes = [
         alterEgo: 'Groot',
         alterEgoImg: 'images/heroes/mc16en_groot-alter-ego.jpg',
         pack: 'Los más buscados de la galaxía',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         hero: 'Mapache Cohete',
@@ -132,6 +150,7 @@ export const heroes = [
         alterEgo: 'Rocket Racoon',
         alterEgoImg: 'images/heroes/mc16en_rocket-racoon-alter-ego.jpg',
         pack: 'Los más buscados de la galaxía',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         hero: 'Starlord',
@@ -139,6 +158,7 @@ export const heroes = [
         alterEgo: 'Peter Quill',
         alterEgoImg: 'images/heroes/mc17en_peter-quill.jpg',
         pack: 'Starlord',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/star-lord"
     },
     {
         hero: 'Gamora',
@@ -146,6 +166,7 @@ export const heroes = [
         alterEgo: 'Gamora',
         alterEgoImg: 'images/heroes/mc18en_gamora-alter-ego.jpg',
         pack: 'Gamora',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/gamora"
     },
     {
         hero: 'Drax',
@@ -153,6 +174,7 @@ export const heroes = [
         alterEgo: 'Drax',
         alterEgoImg: 'images/heroes/mc19en_drax-alter-ego.jpg',
         pack: 'Drax',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/drax"
     },
     {
         hero: 'Veneno',
@@ -160,6 +182,7 @@ export const heroes = [
         alterEgo: 'Flash Thompson',
         alterEgoImg: 'images/heroes/mc20en_flash-thompson.png',
         pack: 'Veneno',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/venom"
     },
     {
         hero: 'Adam Warlock',
@@ -168,6 +191,7 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc21es_adam-warlock-alter-ego.jpg',
         pack: 'La Sombra del Titan Loco',
         numberOfAspects: 4,
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         hero: 'Spectrum',
@@ -175,6 +199,7 @@ export const heroes = [
         alterEgo: 'Monica Rambeau',
         alterEgoImg: 'images/heroes/mc21es_monica-rambeau.jpg',
         pack: 'La Sombra del Titan Loco',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         hero: 'Nébula',
@@ -182,6 +207,7 @@ export const heroes = [
         alterEgo: 'Nebula',
         alterEgoImg: 'images/heroes/mc22es_nebula-alter-ego.jpg',
         pack: 'Nébula',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/nebula"
     },
     {
         hero: 'Maquina de Guerra',
@@ -189,6 +215,7 @@ export const heroes = [
         alterEgo: 'James Rhodes',
         alterEgoImg: 'images/heroes/mc23es_james-rodes-alter-ego.jpg',
         pack: 'Maquina de Guerra',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/war_machine"
     },
     {
         hero: 'Valquiria',
@@ -196,6 +223,7 @@ export const heroes = [
         alterEgo: 'Brunilda',
         alterEgoImg: 'images/heroes/mc25es_brunilda-alter-ego.jpg',
         pack: 'Valquiria',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/valkyrie"
     },
     {
         hero: 'La Visión',
@@ -204,5 +232,53 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc26es_lavision-alter.jpg',
         pack: 'La Visón',
 		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/vision'
+    },
+	{
+        hero: 'Ghost-Spider',
+        heroImg: 'images/heroes/mc27_en_card_ghost-spider.jpg',
+        alterEgo: 'Gwen Stacy',
+        alterEgoImg: 'images/heroes/mc27_en_card_gwen.jpg',
+        pack: 'Motivos Siniestros',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros'
+    },
+	{
+        hero: 'Spiderman Miles Morales',
+        heroImg: 'images/heroes/mc27_en_card_spiderman.jpg',
+        alterEgo: 'Miles Morales',
+        alterEgoImg: 'images/heroes/mc27_en_card_miles_morales.jpg',
+        pack: 'Motivos Siniestros',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros'
+    },
+	{
+        hero: 'Nova',
+        heroImg: 'images/heroes/mc28_es_nova-hero.jpg',
+        alterEgo: 'Sam Alexander',
+        alterEgoImg: 'images/heroes/mc28_es_card_Sam_Alexander.jpg',
+        pack: 'Nova',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/nova_hero_pack'
+    },
+	{
+        hero: 'IronHeart',
+        heroImg: 'images/heroes/mc29_es_Ironheart-hero.jpg',
+        alterEgo: 'Riri Williams',
+        alterEgoImg: 'images/heroes/mc29_es_card_Riri_Williams.jpg',
+        pack: 'IronHeart',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/ironheart'
+    },
+	{
+        hero: 'Spiderham',
+        heroImg: 'images/heroes/mc30_es_Spiderham-hero.jpg',
+        alterEgo: 'Peter Porker',
+        alterEgoImg: 'images/heroes/mc30_es_card_Peter_Porker.jpg',
+        pack: 'Spiderham',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/spider-ham_hero_pack'
+    },
+	{
+        hero: 'Robot SP//dr',
+        heroImg: 'images/heroes/mc31_es_Robot-SP-dr-hero.jpg',
+        alterEgo: 'Peni Parker',
+        alterEgoImg: 'images/heroes/mc31_es_card_Peni_Parker.jpg',
+        pack: 'SP//dr',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/spdr_pack_de_heroe'
     }
 ];

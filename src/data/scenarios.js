@@ -3,26 +3,31 @@ export const scenarios = [
         name: 'Rino - Allanamiento',
         img: 'images/scenarios/MC01es_97A.jpg',
         pack: "Caja Básica",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         name: 'Klaw - Distribución Clandestina',
         img: 'images/scenarios/MC01es_116A.jpg',
         pack: "Caja Básica",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         name: 'Ultrón - La Capucha Carmesí',
         img: 'images/scenarios/MC01es_137A.jpg',
         pack: "Caja Básica",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/marvel_champions_el_juego_de_cartas"
     },
     {
         name: 'Duende Verde - Negocios Arriesgados',
         img: 'images/scenarios/mc02es_card_hostile-takeover.jpg',
         pack: "Duende Verde",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/el_duende_verde"
     },
     {
         name: 'Duende Verde - Fórmula Mutagénica',
         img: 'images/scenarios/02017.jpg',
         pack: 'Duende Verde',
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/el_duende_verde"
     },
     {
         name: 'Brigada de Demolición - Fuga De Prisión',
@@ -68,86 +73,103 @@ export const scenarios = [
 			["Heroico 2", "Heroico 2 (Todos los Villanos A+B)"],
 			["Heroico 3", "Heroico 3 (Todos los Villanos A+B)"],
         ],
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/brigada_de_demolicion"
     },
     {
         name: "Calavera - Ataque Al Monte Atenea",
         pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_61A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         name: "Hombre Absorbente - Por Aquí No Pasa Nadie",
         pack: "La Tiranía de Craneo Rojo",
-        img: "images/scenarios/MC10es_79A.jpg"
+        img: "images/scenarios/MC10es_79A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         name: "Supervisor - A La Caza Del Héroe",
         pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_96A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         name: "Zola - La Isla Del Doctor Zola",
         pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_112A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         name: "Craneo Rojo - La Tiranía de Craneo Rojo",
         pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_128A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
         name: "Kang - La Llegada De Kang",
         pack: "Antiguo Y Futuro Kang",
         img: "images/scenarios/MC11en_7A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/antiguo_y_futuro_kang"
     },
     {
         name: "Drang - Hermandad De Los Badoon",
         pack: "Los más buscados de la galaxia",
         img: "images/scenarios/MC16es_61A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         name: "Coleccionista 1 – Infiltrados En El Museo",
         pack: "Los más buscados de la galaxia",
         img: "images/scenarios/MC16es_73A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         name: "Coleccionista 2 – Huida Del Museo",
         pack: "Los más buscados de la galaxia",
         img: "images/scenarios/MC16es_82A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         name: "Nébula - El arte de la evasión",
         pack: "Los más buscados de la galaxia",
         img: "images/scenarios/MC16es_91A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         name: "Ronan - Intercepción inminente",
         pack: "Los más buscados de la galaxia",
         img: "images/scenarios/MC16es_106A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/los_mas_buscados_de_la_galaxia"
     },
     {
         name: "Fauces Negras - Ataque A Sapiencial",
         pack: "La Sombra del Titán Loco",
         img: "images/scenarios/MC21es_74B.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         name: "Medianoche Próxima/Corvus Glaive - Defender La Torre",
         pack: "La Sombra del Titán Loco",
         img: "images/scenarios/MC21es_98B.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         name: "Thanos - Las Gemas Del Infinito",
         pack: "La Sombra del Titán Loco",
         img: "images/scenarios/MC21es_114B.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         name: "Hela - El Tormento De Odín",
         pack: "La Sombra del Titán Loco",
         img: "images/scenarios/MC21es_138B.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         name: "Loki - Alabado Sea El rey Loki",
         pack: "La Sombra del Titán Loco",
         img: "images/scenarios/MC21es_165B.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
 	{
         name: "El Encapuchado - Búsqueda De Contactos",
@@ -157,6 +179,66 @@ export const scenarios = [
 		{
 			name: "Encapuchado",
 			minModules: 7,
-		}]
+		}],
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/the_hood"
+    },
+    {
+        name: "Hombre de arena - Peatones indefensos",
+        pack: "Motivos Siniestros",
+        img: "images/scenarios/MC27es_64A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Veneno - ¡Dejadnos en paz!",
+        pack: "Motivos Siniestros",
+        img: "images/scenarios/MC27es_76A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Mysterio - Laberinto de espejos",
+        pack: "Motivos Siniestros",
+        img: "images/scenarios/MC27es_87A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Los seis siniestros - Sincronización siniestra",
+        pack: "Motivos Siniestros",
+		decks: [
+            {
+                name: "Doctor Octopus",
+                minModules: 0,
+            },
+            {
+                name: "Electro",
+                minModules: 0,
+            },
+            {
+                name: "Duende",
+                minModules: 0,
+            },
+            {
+                name: "Kraven el Cazador",
+                minModules: 0,
+            },
+			{
+                name: "Escorpión",
+                minModules: 0,
+            },
+			{
+                name: "Buitre",
+                minModules: 0,
+            }
+        ],
+        img: "images/scenarios/MC27es_100A.jpg",
+		difficulties: [
+			["Normal", "Normal (Todos los Villanos I)"]
+		],
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Duende Veneno - El cielo de Nueva York",
+        pack: "Motivos Siniestros",
+        img: "images/scenarios/MC27es_116A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
     }
 ];

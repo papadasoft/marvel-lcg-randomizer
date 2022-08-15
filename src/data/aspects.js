@@ -32,4 +32,13 @@ export const aspects = [
             "Doctor Strange",
         ]
     },
+	{
+        name: 'Determinación',
+        img: 'images/aspects/MC_Determinacion.jpg',
+        packs: [
+            "Core Set",
+            "Ms. Marvel",
+            "Doctor Strange",
+        ]
+    }
 ];

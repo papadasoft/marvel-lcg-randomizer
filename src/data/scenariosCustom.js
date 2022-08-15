@@ -1,5 +1,17 @@
 export const scenarioscustom = [
     {
+        name: 'Barón Zemo - El ascenso de los Thunderbolts',
+        img: 'images/scenariosCustom/BaronZemo.jpg',
+        pack: "Barón Zemo by Jammydude",
+		url: 'https://drive.google.com/drive/folders/1A5onm-EXuz0hTLiS36yq1fOfX7tIyhLk?usp=sharing'
+    },
+	{
+        name: 'Buitre - Robo de Diamantes en Park Avenue',
+        img: 'images/scenariosCustom/BuitreByJammy.jpg',
+        pack: "Buitre by Jammydude",
+		url: 'https://drive.google.com/drive/folders/1J3MED3t0AKFe81G7VByvU09PKW95xg_9?usp=sharing'
+    },
+	{
         name: 'Contest of Champions - Battleworld',
         img: 'images/scenariosCustom/ContestChampions.jpg',
         pack: "Contest of Champions",
@@ -22,6 +34,18 @@ export const scenarioscustom = [
         img: 'images/scenariosCustom/FinFangFoom.jpg',
         pack: "Fin Fang Foom",
 		url: 'https://drive.google.com/drive/folders/1Mns6IaauFXx3XFvICWa2C2GtZ99lI0aE?usp=sharing'
+    },
+	{
+        name: 'Galactus - Devorar La tierra',
+        img: 'images/scenariosCustom/GalactusBubbaEA.jpg',
+        pack: "Galactus",
+		url: 'https://drive.google.com/drive/folders/1l4giCkHl14MuDZw83lIiGsAG9YVjp4SE'
+    },
+	{
+        name: 'Guerra Mundial de Hulk - Guerra Mundial de Hulk',
+        img: 'images/scenariosCustom/WorldWarHulk.jpg',
+        pack: "Guerra Mundial de Hulk by Jammydude",
+		url: 'https://drive.google.com/drive/folders/14-SyMp2jHHMz7A4caFvXbDBSNLm3KeKN?usp=sharing'
     },
 	{
         name: 'Immortus - Erradicar líneas temporales ramificadas',
@@ -64,6 +88,12 @@ export const scenarioscustom = [
         img: 'images/scenariosCustom/MoldeMaestro.jpg',
         pack: "Molde Maestro",
 		url: 'https://drive.google.com/drive/folders/1ledm2KDB2Jek1b8gk9dDWW_oEGJXzhkT?usp=sharing'
+    },
+	{
+        name: 'Morbius - El vampiro viviente',
+        img: 'images/scenariosCustom/Morbius.jpg',
+        pack: "Morbius by Jammydude",
+		url: 'https://drive.google.com/drive/folders/1bwIjl2QzdL1SDLKDz3e2sStWw2qaJLPK?usp=sharing'
     },
 	{
         name: 'Mysterio - Proyecto Virtual Real',

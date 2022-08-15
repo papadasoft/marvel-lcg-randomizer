@@ -3,6 +3,50 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>15 de agosto de 2022</h3>
+                <ul>
+					<li>Añadido soporte para el contenido inicial fanmade de DC Champions.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>14 de agosto de 2022</h3>
+                <ul>
+					<li>Añadido el héroe fanmade Loba Venenosa de Matty.</li>
+					<li>Añadidos los siguientes escenarios fanmade: Barón Zemo, Buitre, Guerra Mundial de Hulk y Morbius, todos de Jammydude.</li>
+					<li>Añadido encuentro modular fanmade En guerra by Jammydude.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>09 de agosto de 2022</h3>
+                <ul>
+					<li>Añadido como opción configurable poder añadir a los aspectos el aspecto fanmade Determinación.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>23 de julio de 2022</h3>
+                <ul>
+					<li>Añadido al contenido oficial los héroes Nova, IronEarth, Spiderham y SP//dr.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>16 de mayo de 2022</h3>
+                <ul>
+					<li>Añadido al contenido fanmade el héroe Sang-Chi y el escenario Galactus.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>19 de abril de 2022</h3>
+                <ul>
+					<li>Añadido al contenido oficial los héroes, escenario y modulares de Motivos Siniestros.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>22 de enero de 2022</h3>
+                <ul>
+					<li>Añadido el pack de héroe fanmade: Penitencia.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
                 <h3>18 de enero de 2022</h3>
                 <ul>
 					<li>Añadido el pack de héroe oficial: La Visión.</li>

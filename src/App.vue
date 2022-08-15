@@ -1,7 +1,8 @@
 <template>
     <div class="app">
         <h1>
-            <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo">
+            <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo" @click="marvel=true;dc=false">
+			<img src="./assets/logo_dc.jpg" alt="DC Champions" class="logo" @click="marvel=false;dc=true">
         </h1>
 		<a href="#datos" id="enlace">&nbsp;</a>
         <button class="randomize-button" @click="randomizeScroll">Generar Partida</button>
@@ -11,7 +12,7 @@
         <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
         <RandomizationOptions v-model="randomizationOptions"/>
 		<div id="datos">
-		<button class="randomize-button" @click="randomizeScroll">Generar Partida</button>&nbsp;&nbsp;<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button>
+		<div class="sticky-top"><button class="randomize-button" @click="randomizeScroll">Generar Partida</button>&nbsp;&nbsp;<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button></div>
         <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
 		<button class="randomize-button" @click="randomizeHeroes">Generar Héroes</button>
         <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>
@@ -28,6 +29,9 @@
 	import {heroescustom} from './data/heroesCustom';
 	import {scenarioscustom} from './data/scenariosCustom';
 	import {modulescustom} from './data/modulesCustom';
+	import {heroescustomdc} from './data/heroesCustomDC';
+	import {scenarioscustomdc} from './data/scenariosCustomDC';
+	import {modulescustomdc} from './data/modulesCustomDC';	
     import {aspects} from "@/data/aspects";
     import PlayerSelector from "@/components/PlayerSelector";
     import RandomizationOptions from "@/components/RandomizationOptions";
@@ -53,6 +57,11 @@
 			HeroesCustom: heroescustom.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
 			ScenariosCustom: scenarioscustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
 			ModulesCustom: modulescustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
+		},
+		fanmadedc: {
+			HeroesCustomDC: heroescustomdc.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
+			ScenariosCustomDC: scenarioscustomdc.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+			ModulesCustomDC: modulescustomdc.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
 		}
     };
 	
@@ -60,6 +69,12 @@
 		HeroesCustom: heroescustom.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
         ScenariosCustom: scenarioscustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
 		ModulesCustom: modulescustom.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
+    };
+	
+	const packscustomdc = {
+		HeroesCustomDC: heroescustomdc.map(a => a.hero).filter((a, i, arr) => arr.indexOf(a) === i),
+        ScenariosCustomDC: scenarioscustomdc.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i),
+		ModulesCustomDC: modulescustomdc.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
     };
 
 
@@ -72,6 +87,14 @@
         selectedPacks = ["Caja Básica"];
         dataStorage.removeItem("selectedPacks");
     }
+	
+	let selectedDifficulties = null;
+	try {
+		selectedDifficulties = JSON.parse(dataStorage.getItem("selectedDifficulties")) || ["normal", "experto"];
+	} catch {
+		selectedDifficulties = ["standard", "expert"];
+		dataStorage.removeItem("selectedDifficulties");
+	}
 
     export default {
         name: 'app',
@@ -79,23 +102,28 @@
             data: {
                 scenarios,
 				scenarioscustom,
+				scenarioscustomdc,
 				packscustom,
+				packscustomdc,
                 modules,
 				modulescustom,
+				modulescustomdc,
                 heroes,
 				heroescustom,
+				heroescustomdc,
                 aspects,
                 packs,
                 difficulties,
             },
-            selectedPacks: selectedPacks,
+            selectedPacks,
             selectedScenario: null,
             selectedDecks: [],
             numberOfPlayer: 1,
             randomizationOptions: {
                 scenario: 1,
                 decks: 1,
-                selectedDifficulties: ["normal", "experto"],
+                selectedDifficulties,
+				determination: false
             },
         }),
         watch: {
@@ -105,6 +133,7 @@
             },
             randomizationOptions: {
                 handler() {
+					dataStorage.setItem("selectedDifficulties", JSON.stringify(this.randomizationOptions.selectedDifficulties));
                     this.randomize();
                 },
                 deep: true,
@@ -118,13 +147,13 @@
                 return this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
             },
             availableScenarios() {
-                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.scenarioscustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
             },
             availableModules() {
-                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.modulescustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
             },
             availableHeroes() {
-                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
+                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0)).concat(this.data.heroescustomdc.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
             },
             availableDifficulties() {
                 return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
@@ -133,15 +162,16 @@
         methods: {
             randomize() {
                 this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
-                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
+                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
             },
 			randomizeScroll() {
 				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
-                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
+                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
 				var el = document.querySelector('#enlace');el.click();
 			},
 			randomizeHeroes() {
-				this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.data.aspects);
+				window.console.log(this.data.aspects);
+				this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
 			},
 			randomizeScenario() {
 				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
@@ -189,7 +219,11 @@
     }
 
     img.logo {
-        height: 100px;
+        height: 80px;
+		padding: 0 15px;
+		@media (max-width: 500px) {
+			heigth:85px;
+		}
     }
 
     .randomize-button {
@@ -286,6 +320,11 @@
 		background-color: red;
 		color: white;
 	}
+	
+	.dc.active {
+		background-color: #00adff !important;
+		color: white;
+	}
 
 	/* Style the tab content */
 	.tabcontent {
@@ -302,6 +341,14 @@
 		vertical-align:top;
 		align-content: middle;
 		display: inline-block !important;
+	}
+	
+	.sticky-top {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		background-color:white;
+		z-index:90;
 	}
 
 </style>
