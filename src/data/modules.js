@@ -244,5 +244,41 @@ export const modules = [
         img: "images/modules/MC27es_170.jpg",
         pack: "Motivos Siniestros",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
-    }
+    },
+    {
+        name: "Hermandad",
+        img: "images/modules/MC32es_73.jpg",
+        pack: "Génesis Mutante",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Mística",
+        img: "images/modules/MC32es_80.jpg",
+        pack: "Génesis Mutante",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Tolerancia cero",
+        img: "images/modules/MC32es_101.jpg",
+        pack: "Génesis Mutante",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Centinelas",
+        img: "images/modules/MC32es_105.jpg",
+        pack: "Génesis Mutante",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Acólitos",
+        img: "images/modules/MC32es_159.jpg",
+        pack: "Génesis Mutante",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Futuro pasado",
+        img: "images/modules/MC32es_166.jpg",
+        pack: "Génesis Mutante",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    }	
 ];

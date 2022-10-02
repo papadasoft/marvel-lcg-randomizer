@@ -3,6 +3,14 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>2 de Octubre de 2022</h3>
+                <ul>
+					<li>Añadido contenido de Génesis Mutante.</li>
+					<li>Añadidos héroes Fénix y Cíclope.</li>
+					<li>Añadida posibilida de usar solo contenido marvel, solo contenido DC o contenido Marvel y DC. Para ellos hacer click para encender o apagar cada uno de ellos haciendo click sobre su logo superior.</li>
+                </ul>
+            </div>
+						<div class="changelog-entry">
                 <h3>15 de agosto de 2022</h3>
                 <ul>
 					<li>Añadido soporte para el contenido inicial fanmade de DC Champions.</li>

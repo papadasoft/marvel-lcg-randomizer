@@ -280,5 +280,53 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc31_es_card_Peni_Parker.jpg',
         pack: 'SP//dr',
 		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/spdr_pack_de_heroe'
+    },
+	{
+        hero: 'Coloso',
+        heroImg: 'images/heroes/mc32_es_coloso-hero.jpg',
+        alterEgo: 'Piotr Rasputin',
+        alterEgoImg: 'images/heroes/mc32_es_card_Piotr_Rasputin.jpg',
+        pack: 'Génesis Mutante',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante'
+    },
+	{
+        hero: 'Gatasombra',
+        heroImg: 'images/heroes/mc32_es_gatasombra-hero.jpg',
+        alterEgo: 'Kitty Pryde',
+        alterEgoImg: 'images/heroes/mc32_es_card_Kitty_Pryde.jpg',
+        pack: 'Génesis Mutante',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante'
+    },
+	{
+        hero: 'Cíclope',
+        heroImg: 'images/heroes/mc33_es_ciclope-hero.jpg',
+        alterEgo: 'Scott Summers',
+        alterEgoImg: 'images/heroes/mc33_es_card_Scott_Summers.jpg',
+        pack: 'Cíclope',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/cyclops'
+    },
+	{
+        hero: 'Fénix',
+        heroImg: 'images/heroes/mc34_es_fenix-hero.jpg',
+        alterEgo: 'Jean Grey',
+        alterEgoImg: 'images/heroes/mc34_es_card_Jean_Grey.jpg',
+        pack: 'Fénix',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/phoenix'
+    },
+	{
+        hero: 'Lobezno',
+        heroImg: 'images/heroes/mc35_es_lobezno-hero.jpg',
+        alterEgo: 'Logan',
+        alterEgoImg: 'images/heroes/mc35_es_card_Logan.jpg',
+        pack: 'Lobezno',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/wolverine'
+    },
+	{
+        hero: 'Tormenta',
+        heroImg: 'images/heroes/mc36_es_tormenta-hero.jpg',
+        alterEgo: 'Ororo Munroe',
+        alterEgoImg: 'images/heroes/mc36_es_card_Ororo_Munroe.jpg',
+        pack: 'Tormenta',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/storm'
     }
 ];

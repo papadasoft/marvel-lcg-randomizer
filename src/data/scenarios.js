@@ -240,5 +240,49 @@ export const scenarios = [
         pack: "Motivos Siniestros",
         img: "images/scenarios/MC27es_116A.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+	{
+        name: "Dientes de Sable - Acosado por Dientes de Sable",
+        pack: "Génesis Mutante",
+        img: "images/scenarios/MC32es_63A.jpg",
+		decks: [
+		{
+			name: "Dientes de Sable",
+			minModules: 2,
+		}],
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+	{
+        name: "Centinela - La noche de los centinelas",
+        pack: "Génesis Mutante",
+        img: "images/scenarios/MC32es_87A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+	{
+        name: "Molde Maestro - La fabrica de Centinelas",
+        pack: "Génesis Mutante",
+        img: "images/scenarios/MC32es_112A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Ataque a la mansión - ¡La Hermandad ataca!",
+        pack: "Génesis Mutante",
+        img: "images/scenarios/MC32es_125A.jpg",
+		difficulties: [
+			["Escaramuza", "Escaramuza (Todos los Villanos A)"],
+            ["Normal", "Normal (Todos los Villanos A)"],
+            ["Experto", "Experto (Todos los Villanos B)"],
+            ["Heroico 1", "Heroico 1 (Todos los Villanos A+B)"],
+			["Heroico 2", "Heroico 2 (Todos los Villanos A+B)"],
+			["Heroico 3", "Heroico 3 (Todos los Villanos A+B)"],
+		],
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    }
+	,
+    {
+        name: "Magneto - Asteroida M",
+        pack: "Génesis Mutante",
+        img: "images/scenarios/MC32es_141A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
     }
 ];

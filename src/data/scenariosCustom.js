@@ -12,6 +12,12 @@ export const scenarioscustom = [
 		url: 'https://drive.google.com/drive/folders/1J3MED3t0AKFe81G7VByvU09PKW95xg_9?usp=sharing'
     },
 	{
+        name: 'Centurión Escarlata - La dinastía de Kang',
+        img: 'images/scenariosCustom/CenturionEscarlata.jpg',
+        pack: "Centurion Escarlata by Epic",
+		url: 'https://drive.google.com/drive/folders/1FOMj7OFAeaQp-3Q7o4IfRBk98DMSQsI6'
+    },
+	{
         name: 'Contest of Champions - Battleworld',
         img: 'images/scenariosCustom/ContestChampions.jpg',
         pack: "Contest of Champions",

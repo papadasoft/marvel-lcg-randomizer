@@ -1,8 +1,20 @@
 <template>
     <div class="app">
-        <h1>
-            <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo" @click="marvel=true;dc=false">
-			<img src="./assets/logo_dc.jpg" alt="DC Champions" class="logo" @click="marvel=false;dc=true">
+        <h1 v-if="marvel && dc">
+            <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo" @click="marvel=!marvel">
+			<img src="./assets/logo_dc.jpg" alt="DC Champions" class="logo" @click="dc=!dc">
+        </h1>
+		<h1 v-if="marvel && !dc">
+            <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo" @click="marvel=!marvel">
+			<img src="./assets/logo_dc_off.jpg" alt="DC Champions" class="logo" @click="dc=!dc">
+        </h1>
+		<h1 v-if="!marvel && dc">
+            <img src="./assets/logo_off.jpg" alt="Marvel Champions" class="logo" @click="marvel=!marvel">
+			<img src="./assets/logo_dc.jpg" alt="DC Champions" class="logo" @click="dc=!dc">
+        </h1>
+		<h1 v-if="!marvel && !dc">
+            <img src="./assets/logo_off.jpg" alt="Marvel Champions" class="logo" @click="marvel=!marvel">
+			<img src="./assets/logo_dc_off.jpg" alt="DC Champions" class="logo" @click="dc=!dc">
         </h1>
 		<a href="#datos" id="enlace">&nbsp;</a>
         <button class="randomize-button" @click="randomizeScroll">Generar Partida</button>
@@ -117,6 +129,8 @@
             },
             selectedPacks,
             selectedScenario: null,
+			marvel: true,
+			dc: false,
             selectedDecks: [],
             numberOfPlayer: 1,
             randomizationOptions: {
@@ -147,13 +161,31 @@
                 return this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
             },
             availableScenarios() {
-                return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.scenarioscustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				if(this.marvel && this.dc) {
+					return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.scenarioscustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else if (this.marvel) {
+					return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else {
+					return this.data.scenarioscustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+				}
             },
             availableModules() {
-                return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.modulescustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				if(this.marvel && this.dc) {
+					return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.modulescustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else if(this.marvel) {
+					return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else {
+					return this.data.modulescustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+				}
             },
             availableHeroes() {
-                return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0)).concat(this.data.heroescustomdc.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
+				if(this.marvel && this.dc) {
+					return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0)).concat(this.data.heroescustomdc.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
+				} else if(this.marvel) {
+					return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
+				} else {
+					return this.data.heroescustomdc.filter(s => this.selectedPacks.indexOf(s.hero) >= 0);
+				}
             },
             availableDifficulties() {
                 return this.data.difficulties.filter(s => this.randomizationOptions.selectedDifficulties.indexOf(s) >= 0);
@@ -161,21 +193,47 @@
         },
         methods: {
             randomize() {
-                this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
-                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
+                this.selectedScenario = randomizer.randomizeScenario(this.availableScenariosF(), this.availableModulesF(), this.availableDifficulties, this.randomizationOptions);
+                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroesF(), this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
             },
 			randomizeScroll() {
-				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
-                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
+				this.selectedScenario = randomizer.randomizeScenario(this.availableScenariosF(), this.availableModulesF(), this.availableDifficulties, this.randomizationOptions);
+                this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroesF(), this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
 				var el = document.querySelector('#enlace');el.click();
 			},
 			randomizeHeroes() {
-				window.console.log(this.data.aspects);
-				this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroes, this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
+				this.selectedDecks = randomizer.randomizeHeroes(this.availableHeroesF(), this.randomizationOptions.determination ? this.data.aspects : this.data.aspects.slice(0,4));
 			},
 			randomizeScenario() {
-				this.selectedScenario = randomizer.randomizeScenario(this.availableScenarios, this.availableModules, this.availableDifficulties, this.randomizationOptions);
-			}
+				this.selectedScenario = randomizer.randomizeScenario(this.availableScenariosF(), this.availableModulesF(), this.availableDifficulties, this.randomizationOptions, this.marvel, this.dc);
+			},
+			availableScenariosF() {
+				if(this.marvel && this.dc) {
+					return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.scenarioscustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else if (this.marvel) {
+					return this.data.scenarios.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.scenarioscustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else {
+					return this.data.scenarioscustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+				}
+            },
+			availableModulesF() {
+				if(this.marvel && this.dc) {
+					return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0)).concat(this.data.modulescustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else if(this.marvel) {
+					return this.data.modules.filter(s => this.selectedPacks.indexOf(s.name) >= 0).concat(this.data.modulescustom.filter(s => this.selectedPacks.indexOf(s.name) >= 0));
+				} else {
+					return this.data.modulescustomdc.filter(s => this.selectedPacks.indexOf(s.name) >= 0);
+				}
+			},
+			availableHeroesF() {
+				if(this.marvel && this.dc) {
+					return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0)).concat(this.data.heroescustomdc.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
+				} else if(this.marvel) {
+					return this.data.heroes.filter(s => this.selectedPacks.indexOf(s.hero) >= 0).concat(this.data.heroescustom.filter(s => this.selectedPacks.indexOf(s.hero) >= 0));
+				} else {
+					return this.data.heroescustomdc.filter(s => this.selectedPacks.indexOf(s.hero) >= 0);
+				}
+            }
         },
         components: {
             DifficultySelector,
@@ -221,9 +279,14 @@
     img.logo {
         height: 80px;
 		padding: 0 15px;
+		cursor: pointer;
 		@media (max-width: 500px) {
 			heigth:85px;
 		}
+    }
+	
+	img.logo:hover {
+		cursor: pointer;
     }
 
     .randomize-button {
