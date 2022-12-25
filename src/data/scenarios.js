@@ -79,6 +79,11 @@ export const scenarios = [
         name: "Calavera - Ataque Al Monte Atenea",
         pack: "La Tiranía de Craneo Rojo",
         img: "images/scenarios/MC10es_61A.jpg",
+		decks: [
+		{
+			name: "Calavera",
+			minModules: 3,
+		}],
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
     {
@@ -102,6 +107,11 @@ export const scenarios = [
     {
         name: "Craneo Rojo - La Tiranía de Craneo Rojo",
         pack: "La Tiranía de Craneo Rojo",
+		decks: [
+		{
+			name: "Craneo Rojo",
+			minModules: 2,
+		}],
         img: "images/scenarios/MC10es_128A.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_tirania_de_craneo_rojo"
     },
@@ -144,6 +154,11 @@ export const scenarios = [
     {
         name: "Fauces Negras - Ataque A Sapiencial",
         pack: "La Sombra del Titán Loco",
+		decks: [
+		{
+			name: "Fauces Negras",
+			minModules: 2,
+		}],
         img: "images/scenarios/MC21es_74B.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
@@ -156,18 +171,33 @@ export const scenarios = [
     {
         name: "Thanos - Las Gemas Del Infinito",
         pack: "La Sombra del Titán Loco",
+		decks: [
+		{
+			name: "Thanos",
+			minModules: 2,
+		}],
         img: "images/scenarios/MC21es_114B.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         name: "Hela - El Tormento De Odín",
         pack: "La Sombra del Titán Loco",
+		decks: [
+		{
+			name: "Hela",
+			minModules: 2,
+		}],
         img: "images/scenarios/MC21es_138B.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
     {
         name: "Loki - Alabado Sea El rey Loki",
         pack: "La Sombra del Titán Loco",
+		decks: [
+		{
+			name: "Loki",
+			minModules: 2,
+		}],
         img: "images/scenarios/MC21es_165B.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_sombra_del_titan_loco"
     },
@@ -277,12 +307,29 @@ export const scenarios = [
 			["Heroico 3", "Heroico 3 (Todos los Villanos A+B)"],
 		],
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
-    }
-	,
+    },
     {
-        name: "Magneto - Asteroida M",
+        name: "Magneto - Asteroide M",
         pack: "Génesis Mutante",
         img: "images/scenarios/MC32es_141A.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
+    },
+    {
+        name: "Magog - El coliseo de Mojo",
+        pack: "Mojomanía",
+        img: "images/scenarios/MC39es_2A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Espiral - Viaje por el Mojoverso",
+        pack: "Mojomanía",
+        img: "images/scenarios/MC39es_15A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Mojo - Mojomanía",
+        pack: "Mojomanía",
+        img: "images/scenarios/MC39es_25A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
     }
 ];

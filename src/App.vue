@@ -1,5 +1,10 @@
 <template>
     <div class="app">
+		<div id="aladina" class="aladina" v-if="aladina">
+            ¡Necesitamos tu ayuda Héroe! <a href="https://www.youtube.com/channel/UC1z0ZdjNGwYpZymwppiIh5A" target="_new" style="color:white;">La Mano de Thanos</a> y <a style="color:white;" href="https://www.youtube.com/channel/UC-IKyGEJP-lKYMifT7IHNlw" target="_new">Owen Rules</a> han pueston en marcha una campaña solidaria a favor de la Fundación Aladina y los niños con cáncer.<br/><br/>Yo colaboro ¿Y tú?<br/>
+			<br/><div class="aladina-button ok"><a style="color:green;" href="http://lamanosolidaria.com" target="_new">Si, yo también quiero colaborar</a></div><div class="aladina-button"><a style="color: red;" href="#" @click="aladina=!aladina">No, mejor lo dejo pasar</a></div>
+			<br/>Quedan: {{ dias }} días.
+        </div>
         <h1 v-if="marvel && dc">
             <img src="./assets/logo.jpg" alt="Marvel Champions" class="logo" @click="marvel=!marvel">
 			<img src="./assets/logo_dc.jpg" alt="DC Champions" class="logo" @click="dc=!dc">
@@ -89,6 +94,10 @@
 		ModulesCustomDC: modulescustomdc.map(a => a.name).filter((a, i, arr) => arr.indexOf(a) === i)
     };
 
+	const d = new Date("2022-12-18");
+	const n = new Date();
+	const diffTime = Math.abs(d - n);
+	const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
 
     const randomizer = new Randomizer();
 
@@ -127,10 +136,12 @@
                 packs,
                 difficulties,
             },
+			dias: diffDays,
             selectedPacks,
             selectedScenario: null,
 			marvel: true,
 			dc: false,
+			aladina: false,
             selectedDecks: [],
             numberOfPlayer: 1,
             randomizationOptions: {
@@ -289,6 +300,24 @@
 		cursor: pointer;
     }
 
+	.aladina {
+		background-color: red;
+		color: white;
+		padding: 5px 10px;
+	}
+	
+	.aladina-button {
+		background-color: white;
+		color:red;
+		padding: 3px 5px;
+		a {
+			color: red !important;
+		}
+		.ok {
+			color: green !important;
+		}
+	}
+	
     .randomize-button {
         padding: 10px;
         margin: 10px;

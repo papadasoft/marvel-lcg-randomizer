@@ -228,6 +228,30 @@ export const modules = [
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/the_hood"
     },
     {
+        name: "Armadillo",
+        img: "images/modules/mc28_es_armadillo_28.jpg",
+        pack: "Nova",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/nova_hero_pack"
+    },
+    {
+        name: "ZZZAX",
+        img: "images/modules/mc29_es_zzzax_36.jpg",
+        pack: "IronHeart",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/ironheart"
+    },
+    {
+        name: "Los Herederos",
+        img: "images/modules/mc30_es_herederos_30.jpg",
+        pack: "Spiderham",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/ironheart"
+    },
+    {
+        name: "Los Seis Siniestros de Iron Spider",
+        img: "images/modules/mc31_es_seis_siniestros_30.jpg",
+        pack: "SP//dr",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/spdr_pack_de_heroe"
+    },
+    {
         name: "Con los pies en la tierra",
         img: "images/modules/MC27es_131.jpg",
         pack: "Motivos Siniestros",
@@ -280,5 +304,41 @@ export const modules = [
         img: "images/modules/MC32es_166.jpg",
         pack: "Génesis Mutante",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
-    }	
+    },
+    {
+        name: "Policíaco",
+        img: "images/modules/MC39es_35.jpg",
+        pack: "Mojomanía",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Fantasía",
+        img: "images/modules/MC39es_41.jpg",
+        pack: "Mojomanía",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Terror",
+        img: "images/modules/MC39es_47.jpg",
+        pack: "Mojomanía",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Ciencia Ficción",
+        img: "images/modules/MC39es_53.jpg",
+        pack: "Mojomanía",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Telecomedia",
+        img: "images/modules/MC39es_60.jpg",
+        pack: "Mojomanía",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Salvaje Oeste",
+        img: "images/modules/MC39es_66.jpg",
+        pack: "Mojomanía",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    }
 ];
