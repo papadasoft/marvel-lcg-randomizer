@@ -252,6 +252,12 @@ export const modules = [
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/spdr_pack_de_heroe"
     },
     {
+        name: "Caos en la ciudad",
+        img: "images/modules/MC27es_127.jpg",
+        pack: "Motivos Siniestros",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
         name: "Con los pies en la tierra",
         img: "images/modules/MC27es_131.jpg",
         pack: "Motivos Siniestros",
@@ -260,6 +266,30 @@ export const modules = [
     {
         name: "Artilúgios de Duende",
         img: "images/modules/MC27es_136.jpg",
+        pack: "Motivos Siniestros",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Tácticas de guerrilla",
+        img: "images/modules/MC27es_142.jpg",
+        pack: "Motivos Siniestros",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Tecnología de Osborn",
+        img: "images/modules/MC27es_147.jpg",
+        pack: "Motivos Siniestros",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Ataque siniestro",
+        img: "images/modules/MC27es_158.jpg",
+        pack: "Motivos Siniestros",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
+    },
+    {
+        name: "Fuerza simbiótica",
+        img: "images/modules/MC27es_167.jpg",
         pack: "Motivos Siniestros",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/motivos_siniestros"
     },
@@ -306,6 +336,24 @@ export const modules = [
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/genesis_mutante"
     },
     {
+        name: "Dama Mortal",
+        img: "images/modules/MC35es_35.jpg",
+        pack: "Lobezno",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/wolverine"
+    },
+    {
+        name: "Rey Sombra",
+        img: "images/modules/MC36es_37.jpg",
+        pack: "Tormenta",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/storm"
+    },
+    {
+        name: "Éxodo",
+        img: "images/modules/MC37es_33.jpg",
+        pack: "Gámbito",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/gambit"
+    },
+    {
         name: "Policíaco",
         img: "images/modules/MC39es_35.jpg",
         pack: "Mojomanía",
@@ -340,5 +388,41 @@ export const modules = [
         img: "images/modules/MC39es_66.jpg",
         pack: "Mojomanía",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Arsenal militar",
+        img: "images/modules/MC40es_90.jpg",
+        pack: "La Próxima Evolución",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Asesinos de mutantes",
+        img: "images/modules/MC40es_94.jpg",
+        pack: "La Próxima Evolución",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Chicos malos",
+        img: "images/modules/MC40es_112.jpg",
+        pack: "La Próxima Evolución",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Tom Casiidy el Negro",
+        img: "images/modules/MC40es_132.jpg",
+        pack: "La Próxima Evolución",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Medidas extremas",
+        img: "images/modules/MC40es_180.jpg",
+        pack: "La Próxima Evolución",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Insurrección mutante",
+        img: "images/modules/MC40es_185.jpg",
+        pack: "La Próxima Evolución",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
     }
 ];

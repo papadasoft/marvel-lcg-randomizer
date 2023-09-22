@@ -22,6 +22,7 @@
 			<img src="./assets/logo_dc_off.jpg" alt="DC Champions" class="logo" @click="dc=!dc">
         </h1>
 		<a href="#datos" id="enlace">&nbsp;</a>
+		<a href="https://discord.gg/EeTJ8Jpg" target="_blank" style="color:blue;text-decoration: none;"><span style="margin-right:15px;">Únete a nuestro Discord!</span><img style="vertical-align:middle;" src="./assets/discord-png.png" alt="Unete a nuestro servidor de Discord." title="Unete a nuestro servidor de Discord." /></a><br/>
         <button class="randomize-button" @click="randomizeScroll">Generar Partida</button>
         <PlayerSelector v-model="numberOfPlayer"/>
 
@@ -29,7 +30,9 @@
         <DifficultySelector :difficulties="data.difficulties" v-model="randomizationOptions.selectedDifficulties" />
         <RandomizationOptions v-model="randomizationOptions"/>
 		<div id="datos">
-		<div class="sticky-top"><button class="randomize-button" @click="randomizeScroll">Generar Partida</button>&nbsp;&nbsp;<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button></div>
+		<div class="sticky-top"><button class="randomize-button" @click="randomizeScroll">Generar Partida</button>&nbsp;&nbsp;<button class="randomize-button" @click="randomizeScenario">Generar Escenario</button><br/>
+			<a href="https://discord.gg/EeTJ8Jpg" target="_blank" style="color:blue;text-decoration: none;"><span style="margin-right:15px;">Únete a nuestro Discord!</span><img style="vertical-align:middle;" src="./assets/discord-png.png" alt="Unete a nuestro servidor de Discord." title="Unete a nuestro servidor de Discord." /></a>
+		</div>
         <Scenario v-if="randomizationOptions.scenario" :scenario="selectedScenario"/>
 		<button class="randomize-button" @click="randomizeHeroes">Generar Héroes</button>
         <DeckList v-if="randomizationOptions.decks" :available-decks="selectedDecks" :number-of-player="numberOfPlayer"/>

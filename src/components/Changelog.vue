@@ -3,9 +3,22 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>17 de Agosto de 2023</h3>
+                <ul>
+					<li>Añadido el contenido de la nueva caja de campaña La Próxima Evolución: heroes Cable y domino, escenarios Merodeadores, Juggernaut, Mr. Siniestro y Dyscordia asi como los modulares.</li>
+					
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>04 de Abril de 2023</h3>
+                <ul>
+					<li>Añadidos los héroes oficiales Gámbito y Pícara.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
                 <h3>25 de Diciembre de 2022</h3>
                 <ul>
-					<li>La campaña solidario de La mano solidaria ha conseguido recaudar 6.385€. Gracias a todos por vuestra colaboración.</li>
+					<li>La campaña solidaria de La mano solidaria ha conseguido recaudar 6.385€. Gracias a todos por vuestra colaboración.</li>
                 </ul>
             </div>
 			<div class="changelog-entry">

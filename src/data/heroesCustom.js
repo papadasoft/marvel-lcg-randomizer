@@ -399,7 +399,7 @@ export const heroescustom = [
         alterEgo: "Servicio Gubernamental",
         alterEgoImg: 'images/heroesCustom/ServicioGubernamentalByJuncal.jpg',
         pack: 'S.H.I.E.L.D. by Juncal',
-		url: 'https://drive.google.com/drive/folders/1rPhgQuybmWyq619yn1059R2SPBiqVUpM'
+		url: 'https://drive.google.com/drive/folders/14qok0FXvLwHM5EiOWTacksDzfRxxP5DN?usp=sharing'
     },
 	{
         hero: 'Soldado de Invierno by Rainy',
@@ -471,7 +471,7 @@ export const heroescustom = [
         alterEgo: "Ororo Munroe",
         alterEgoImg: 'images/heroesCustom/OroroMunroeByJuncal.jpg',
         pack: 'Tormenta by Juncal',
-		url: 'https://drive.google.com/drive/folders/1rtg8Yuxdgf4CeC8zsDpQRscnSKkM718c'
+		url: 'https://drive.google.com/drive/folders/1SzRIcvjjbjxyV9oZ1KYLNn5xyQLXYTxZ?usp=sharing'
     },
 	{
         hero: 'Venom By Picollo',

@@ -328,5 +328,37 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc36_es_card_Ororo_Munroe.jpg',
         pack: 'Tormenta',
 		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/storm'
+    },
+	{
+        hero: 'Gámbito',
+        heroImg: 'images/heroes/mc37_es_gambito-hero.jpg',
+        alterEgo: 'Remy LeBeau',
+        alterEgoImg: 'images/heroes/mc37_es_card_remy_lebeau.jpg',
+        pack: 'Gámbito',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/gambit'
+    },
+	{
+        hero: 'Pícara',
+        heroImg: 'images/heroes/mc38_es_picara-hero.jpg',
+        alterEgo: 'Anna Marie',
+        alterEgoImg: 'images/heroes/mc38_es_card_Anna_Marie.jpg',
+        pack: 'Pícara',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/rogue'
+    },
+	{
+        hero: 'Cable',
+        heroImg: 'images/heroes/mc40_es_cable-hero.jpg',
+        alterEgo: 'Nathan Summers',
+        alterEgoImg: 'images/heroes/mc40_es_card_Nathan_Summers.jpg',
+        pack: 'La Próxima Evolución',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion'
+    },
+	{
+        hero: 'Dominó',
+        heroImg: 'images/heroes/mc40_es_domino-hero.jpg',
+        alterEgo: 'Neena Thurman',
+        alterEgoImg: 'images/heroes/mc40_es_card_Neena_Thurman.jpg',
+        pack: 'La Próxima Evolución',
+		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion'
     }
 ];

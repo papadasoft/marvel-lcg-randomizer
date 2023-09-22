@@ -78,22 +78,22 @@ export const scenarioscustom = [
 		url: 'https://drive.google.com/drive/folders/1nBiFjrG7oDNj14MyeMmgQbt3xllYIXwB'
     },
 	{
-        name: 'Maestro - Caos nuclear',
+        name: 'Maestro - Amenaza nuclear',
         img: 'images/scenariosCustom/Maestro.jpg',
         pack: "Maestro",
-		url: 'https://drive.google.com/drive/folders/1kK7VgJcA0wwfKtm75b9Cll08vsL6pNe2?usp=sharing'
+		url: 'https://drive.google.com/drive/folders/1n1fEgDsCDTsYfV0WtTI757d0kXvrGfPG?usp=sharing'
     },
 	{
         name: 'Mr. Siniestro - Jugando a ser Dios',
         img: 'images/scenariosCustom/MrSiniestro.jpg',
         pack: "Mr. Siniestro",
-		url: 'https://drive.google.com/drive/folders/1vto4xrJxW6RpoCD_6rMijPmgxmTQsogE?usp=sharing'
+		url: 'https://drive.google.com/drive/folders/1FTzJHckCGTI05VWnvw4PQIvY1gOV7uBB?usp=sharing'
     },
 	{
         name: 'Molde maestro - Proteger a la humanidad',
         img: 'images/scenariosCustom/MoldeMaestro.jpg',
         pack: "Molde Maestro",
-		url: 'https://drive.google.com/drive/folders/1ledm2KDB2Jek1b8gk9dDWW_oEGJXzhkT?usp=sharing'
+		url: 'https://drive.google.com/drive/folders/1JDMbP0wPCvE2KHAR0zrPLQ2mqQKnKD03?usp=sharing'
     },
 	{
         name: 'Morbius - El vampiro viviente',

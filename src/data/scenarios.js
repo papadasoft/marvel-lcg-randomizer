@@ -331,5 +331,50 @@ export const scenarios = [
         pack: "Mojomanía",
         img: "images/scenarios/MC39es_25A.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/mojomania"
+    },
+    {
+        name: "Merodeadores - Asedio Morlock",
+        pack: "La Próxima Evolución",
+		decks: [
+		{
+			name: "Merodeadores - Asedio Morlock",
+			minModules: 2,
+		}],
+        img: "images/scenarios/MC40es_77A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Merodeadores - A la fuga",
+        pack: "La Próxima Evolución",
+		decks: [
+		{
+			name: "Merodeadores - A la fuga",
+			minModules: 2,
+		}],
+        img: "images/scenarios/MC40es_103A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Juggernaut - El imparable Juggernaut",
+        pack: "La Próxima Evolución",
+        img: "images/scenarios/MC40es_121A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Mister Siniestro - Intenciones siniestras",
+        pack: "La Próxima Evolución",
+        img: "images/scenarios/MC40es_139A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Dyscordia - Poder incontrolable",
+        pack: "La Próxima Evolución",
+		decks: [
+		{
+			name: "Dyscordia - Poder incontrolable",
+			minModules: 2,
+		}],
+        img: "images/scenarios/MC40es_166A.jpg",
+		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
     }
 ];
