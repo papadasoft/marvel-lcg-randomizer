@@ -360,5 +360,85 @@ export const heroes = [
         alterEgoImg: 'images/heroes/mc40_es_card_Neena_Thurman.jpg',
         pack: 'La Próxima Evolución',
 		url: 'http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion'
+    },
+	{
+        hero: 'Mariposa Mental',
+        heroImg: 'images/heroes/mc41es_mariposa_mental-hero.jpg',
+        alterEgo: 'Betsy Braddock',
+        alterEgoImg: 'images/heroes/mc41es_card_Betsy_Braddock.jpg',
+        pack: 'Mariposa Mental',
+		url: 'https://www.fantasyflightgames.es/producto/psylocke-hero-pack/'
+    },
+	{
+        hero: 'Ángel',
+        heroImg: 'images/heroes/mc42es_angel-hero.jpg',
+        alterEgo: 'Warren Worthington III',
+        alterEgoImg: 'images/heroes/mc42es_card_warren_worthington_iii.jpg',
+        pack: 'Ángel',
+		url: 'https://www.fantasyflightgames.es/producto/angel-hero-pack/'
+    },
+	{
+        hero: 'X-23',
+        heroImg: 'images/heroes/mc43es_x-23-hero.jpg',
+        alterEgo: 'Laura Kinney',
+        alterEgoImg: 'images/heroes/mc43es_card_Laura_Kinney.jpg',
+        pack: 'X-23',
+		url: 'https://www.fantasyflightgames.es/producto/x-23-hero-pack/'
+    },
+	{
+        hero: 'Masacre',
+        heroImg: 'images/heroes/mc44es_masacre-hero.jpg',
+        alterEgo: 'Wade Wilson',
+        alterEgoImg: 'images/heroes/mc44es_card_wade_wilson.jpg',
+        pack: 'Masacre',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
+    },
+	{
+        hero: 'Bishop',
+        heroImg: 'images/heroes/mc45_es_bishop_hero.jpg',
+        alterEgo: 'Lucas Bishop',
+        alterEgoImg: 'images/heroes/mc45_es_lucas_bishop.jpg',
+        pack: 'La era de Apocalipsis',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
+    },
+	{
+        hero: 'Magik',
+        heroImg: 'images/heroes/mc45_es_magik_hero.jpg',
+        alterEgo: 'Illyana Rasputin',
+        alterEgoImg: 'images/heroes/mc45_es_illyana_rasputin.jpg',
+        pack: 'La era de Apocalipsis',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
+    },
+	{
+        hero: 'Hombre de Hielo',
+        heroImg: 'images/heroes/mc46_es_hombre_de_hielo_hero.jpg',
+        alterEgo: 'Bobby Drake',
+        alterEgoImg: 'images/heroes/mc46_es_bobby_drake.jpg',
+        pack: 'El hombre de Hielo',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
+    },
+	{
+        hero: 'Júbilo',
+        heroImg: 'images/heroes/mc47_es_jubilo_hero.jpg',
+        alterEgo: 'Jubilation Lee',
+        alterEgoImg: 'images/heroes/mc47_es_jubilation_lee.jpg',
+        pack: 'Júbilo',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
+    },
+	{
+        hero: 'Rondador Nocturno',
+        heroImg: 'images/heroes/mc48_es_rondador_nocturno_hero.jpg',
+        alterEgo: 'Kurt Wagner',
+        alterEgoImg: 'images/heroes/mc48_es_kurt_wagner.jpg',
+        pack: 'Rondador Nocturno',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
+    },
+	{
+        hero: 'Magneto',
+        heroImg: 'images/heroes/mc49_es_magneto_hero.jpg',
+        alterEgo: 'Erik Lehnsherr',
+        alterEgoImg: 'images/heroes/mc49_es_erik_lehnsherr.jpg',
+        pack: 'Magneto',
+		url: 'https://www.fantasyflightgames.es/coleccion/marvel-champions/'
     }
 ];

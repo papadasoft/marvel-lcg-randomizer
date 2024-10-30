@@ -376,5 +376,50 @@ export const scenarios = [
 		}],
         img: "images/scenarios/MC40es_166A.jpg",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Unus - Cacería de traidores a la raza",
+        pack: "La era de Apocalipsis",
+        img: "images/scenarios/MC45es_4A.jpg",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Guerra, Hambre, Peste y Muerte - Los Jinetes de Apocalipsis",
+        pack: "La era de Apocalipsis",
+		decks: [
+		{
+			name: "Guerra, Hambre, Peste y Muerte - Los Jinetes de Apocalipsis",
+			minModules: 2,
+		}],
+        img: "images/scenarios/MC45es_85A.jpg",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Apocalipsis - La era de Apocalipsis",
+        pack: "La era de Apocalipsis",
+		decks: [
+		{
+			name: "Apocalipsis - La era de Apocalipsis",
+			minModules: 2,
+		}],
+        img: "images/scenarios/MC45es_103A.jpg",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Bestia Oscura - El alucinante viaje de la Bestia Oscura",
+        pack: "La era de Apocalipsis",
+        img: "images/scenarios/MC45es_121A.jpg",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Apocalipsis - La pirámide de En Sabah Nur",
+        pack: "La era de Apocalipsis",
+		decks: [
+		{
+			name: "Apocalipsis - La pirámide de En Sabah Nur",
+			minModules: 2,
+		}],
+        img: "images/scenarios/MC45es_147A.jpg",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
     }
 ];

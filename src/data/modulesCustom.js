@@ -6,10 +6,22 @@ export const modulescustom = [
 		url: 'https://drive.google.com/drive/folders/19Na3qpNxYNJnFrzsZSXLdNu-BJTZP5aq?usp=sharing'
     },
     {
+        name: "Daños colaterales",
+        img: 'images/modulesCustom/DanoscolateralesByNugget.jpg',
+        pack: "Daños colaterales by Nugget",
+		url: "https://drive.google.com/drive/folders/1MngVuu3_KFI-tdL3a-AYGWRib2PdDXBb?usp=sharing"
+    },
+    {
         name: "Daredevil Bestia",
         img: 'images/modulesCustom/DaredevilBestia.jpg',
         pack: "Daredevil Bestia",
 		url: "https://drive.google.com/drive/folders/1xJb8ZnXUo-3kJZL0aP1Sa4sH_w1h3iMz"
+    },
+    {
+        name: "Culto a Matanza",
+        img: 'images/modulesCustom/CultoAMatanza.jpg',
+        pack: "Culto a Matanza by ekAugust",
+		url: 'https://drive.google.com/drive/folders/1YwLnzk-odY0lT69xrhrjDDPqQZdgDpym'
     },
     {
         name: "Criatura de sangre fría",

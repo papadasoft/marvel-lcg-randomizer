@@ -424,5 +424,77 @@ export const modules = [
         img: "images/modules/MC40es_185.jpg",
         pack: "La Próxima Evolución",
 		url: "http://www.fantasyflightgames.es/juegos/articulo/marvel_champions/la_proxima_evolucion"
+    },
+    {
+        name: "Malsacre",
+        img: "images/modules/MC44es_37.jpg",
+        pack: "Masacre",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Infinitos",
+        img: "images/modules/MC45es_69.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Pesadilla distópica",
+        img: "images/modules/MC45es_72.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Sabuesos",
+        img: "images/modules/MC45es_97.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Los jinetes oscuros",
+        img: "images/modules/MC45es_117.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Tierra salvaje",
+        img: "images/modules/MC45es_132.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Genosha",
+        img: "images/modules/MC45es_138.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Tecnología celestial",
+        img: "images/modules/MC45es_156.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Klan Akkaba",
+        img: "images/modules/MC45es_163.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Modular La era de Apocalipsis",
+        img: "images/modules/MC45es_168.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Capataz",
+        img: "images/modules/MC45es_179A.jpg",
+        pack: "La era de Apocalipsis",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
+    },
+    {
+        name: "Arcade",
+        img: "images/modules/MC47es_30.jpg",
+        pack: "Júbilo",
+		url: "https://www.fantasyflightgames.es/coleccion/marvel-champions/"
     }
 ];

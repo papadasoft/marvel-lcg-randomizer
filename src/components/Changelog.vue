@@ -3,6 +3,20 @@
         <div @click="shown=!shown" class="panel-insert">Cambios</div>
         <div v-if="shown">
 			<div class="changelog-entry">
+                <h3>27 de Octubre de 2024</h3>
+                <ul>
+					<li>Añadido todo el ciclo oficial de La era de Apocalipsis así como todo el ciclo de héroes correspondiente.</li>
+					<li>Hemos migrado a un nuevo servidor y quizás eso podría hacer que os toque seleccionar de nuevo todo el contenido que teniais asociado. Sentimos la molestia.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
+                <h3>25 de Septiembre de 2023</h3>
+                <ul>
+					<li>Añadidos los escenarios fanmade de Matanza y Matanza Máxima.</li>
+					<li>Añadidos los encuentros modulares fanmade Daños Colaterales y Culto a Matanza.</li>
+                </ul>
+            </div>
+			<div class="changelog-entry">
                 <h3>17 de Agosto de 2023</h3>
                 <ul>
 					<li>Añadido el contenido de la nueva caja de campaña La Próxima Evolución: heroes Cable y domino, escenarios Merodeadores, Juggernaut, Mr. Siniestro y Dyscordia asi como los modulares.</li>

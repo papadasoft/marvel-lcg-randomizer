@@ -1,0 +1,3 @@
+Para solucionarlo hay  que ejecutar por consola:
+
+set NODE_OPTIONS=--openssl-legacy-provider
